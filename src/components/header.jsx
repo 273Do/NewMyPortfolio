@@ -16,10 +16,10 @@ const Header = () => {
             <a href="#">Main</a>
           </li>
           <li>
-            <a href="#">Tools</a>
+            <a href="#">Tool</a>
           </li>
           <li>
-            <a href="#">Movies</a>
+            <a href="#">Movie</a>
           </li>
           <li>
             <a href="#">Design</a>
