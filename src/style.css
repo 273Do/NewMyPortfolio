@@ -19,7 +19,7 @@ ion-icon {
 /* hover */
 header nav ul li a:hover,
 footer nav ul li a:hover,
-.tool_list nav ul li:hover {
+.tool_list nav ul li img:hover {
   opacity: 0.5;
   cursor: url("./images/cursor.png"), auto;
 }
