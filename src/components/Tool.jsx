@@ -1,6 +1,7 @@
 import React, { Suspense } from "react";
 import { Underlay } from "./Common";
 import { Three } from "../Three";
+import ToolList from "./ToolList";
 
 const Tool = () => {
   return (
@@ -22,6 +23,7 @@ const Tool = () => {
       >
         <div className="header_space"></div>
         <div>Tool</div>
+        <ToolList />
         <div className="footer_space"></div>
       </div>
 

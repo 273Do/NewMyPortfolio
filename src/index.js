@@ -17,7 +17,7 @@ createRoot(document.getElementById("root")).render(
       <Underlay />
       <Routes>
         <Route path="/" element={<Main />} />
-        <Route path="/tool" element={<Tool />} />
+        <Route path="/tool/credit_checker" element={<Tool />} />
         <Route path="/movie" element={<Movie />} />
         <Route path="/design" element={<Design />} />
         <Route

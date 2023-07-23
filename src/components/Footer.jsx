@@ -44,7 +44,7 @@ const Footer = () => {
               target="_blank"
               rer="noopener noreferrer"
             >
-              <ion-icon size="small" name="logo-youtube"></ion-icon>
+              <ion-icon name="logo-youtube"></ion-icon>
             </a>
           </li>
         </ul>
