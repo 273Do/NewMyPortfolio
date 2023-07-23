@@ -203,11 +203,11 @@ footer nav ul li a {
 
 .tool_list nav ul li {
   list-style: none;
-  transition: all 0.3s;
 }
 
 .tool_list nav ul li img {
   margin-top: 20px;
   height: 10vw;
   max-height: 70px;
+  transition: all 0.3s;
 }
