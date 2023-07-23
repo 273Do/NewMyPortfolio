@@ -58,6 +58,7 @@ header h1 img {
   margin-right: 30px;
   width: 150px;
   height: 84px;
+  pointer-events: none;
 }
 
 header nav ul li {
