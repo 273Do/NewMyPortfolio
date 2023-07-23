@@ -3,15 +3,17 @@
 
 import { createRoot } from "react-dom/client";
 import { Suspense } from "react";
-import { Underlay, Overlay } from "./App";
+import { Underlay, Overlay } from "./components/Common";
 import { Three } from "./Three";
-import "./App.css";
+import "./style.css";
+import Tool from "./components/Tool";
+import Main from "./components/Main";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 createRoot(document.getElementById("root")).render(
   <>
     <Underlay />
-    <Suspense fallback={null}>
-      <Three />
-    </Suspense>
+    <Tool />
   </>
 );
