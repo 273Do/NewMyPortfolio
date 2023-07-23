@@ -6,9 +6,7 @@ const Header = () => {
   return (
     <header>
       <h1 className="site_logo">
-        <a href="#">
-          <img src={myLogo} alt="273*Logo" />
-        </a>
+        <img src={myLogo} alt="273*Logo" />
       </h1>
 
       <nav>
