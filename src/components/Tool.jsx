@@ -1,5 +1,5 @@
 import React, { Suspense } from "react";
-import { Underlay } from "./App";
+import { Underlay } from "./Common";
 import { Three } from "../Three";
 
 const Tool = () => {
@@ -17,11 +17,14 @@ const Tool = () => {
           flexDirection: "column",
           alignItems: "flex-start",
           justifyContent: "flex-start",
-          pointerEvents: "none",
+          pointerEvents: "auto",
         }}
       >
-        <h1>コンテンツ</h1>
+        <div className="header_space"></div>
+        <div>Tool</div>
+        <div className="footer_space"></div>
       </div>
+
       <Suspense fallback={null}>
         <Three />
       </Suspense>

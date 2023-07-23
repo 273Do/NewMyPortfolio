@@ -1,10 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import myLogo from "../images/273DoLogo.png";
 
 const Header = () => {
   return (
     <header>
-      <h1 class="site_logo">
+      <h1 className="site_logo">
         <a href="#">
           <img src={myLogo} alt="273*Logo" />
         </a>
@@ -13,19 +14,19 @@ const Header = () => {
       <nav>
         <ul>
           <li>
-            <a href="#">Main</a>
+            <Link to="/">Main</Link>
           </li>
           <li>
-            <a href="#">Tool</a>
+            <Link to="/tool">Tool</Link>
           </li>
           <li>
-            <a href="#">Movie</a>
+            <Link to="/movie">Movie</Link>
           </li>
           <li>
-            <a href="#">Design</a>
+            <Link to="/design">Design</Link>
           </li>
           <li>
-            <a href="#">Club / Other_Activities</a>
+            <Link to="/club_other_activities">Club / Other_Activities</Link>
           </li>
         </ul>
       </nav>
