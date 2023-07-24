@@ -56,6 +56,7 @@ function Bauble({
       ref={api}
       colliders={false}
       dispose={null}
+      onClick={() => console.log("osareat")}
     >
       <BallCollider args={[scale]} />
       <CylinderCollider
