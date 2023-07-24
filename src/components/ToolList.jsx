@@ -27,8 +27,8 @@ const ToolList = () => {
             </Link>
           </li>
           <li>
-            <Link to="/tool/thor">
-              <img src={Th} alt="Thor" />
+            <Link to="/tool/project_thor">
+              <img src={Th} alt="ProjectThor" />
             </Link>
           </li>
           <li>

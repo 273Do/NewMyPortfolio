@@ -24,14 +24,64 @@ createRoot(document.getElementById("root")).render(
           element={<ClubOtherActivities />}
         />
         {/* ページごとに変数を追加してルーティング設定を行う */}
-        <Route path="/tool/credit_checker" element={<Tool />} />
-        {/* <Route path="/tool/credit_checker" element={<Tool />} />
-        <Route path="/movie" element={<Movie />} />
-        <Route path="/design" element={<Design />} />
         <Route
-          path="/club_other_activities"
-          element={<ClubOtherActivities />}
-        /> */}
+          path="/tool/credit_checker"
+          element={
+            <Tool
+              toolNameF={"Credit_"}
+              toolNameL={"Checker"}
+              desc={
+                "ユニパからダウンロードした 成績表 PDFファイルを読み込むと，自動で不足単位数や修得進捗，GPA表示してくれます．現在は情報と経済学部に対応しています．"
+              }
+            />
+          }
+        />
+        <Route
+          path="/tool/formula_generator"
+          element={
+            <Tool
+              toolNameF={"Formula_"}
+              toolNameL={"Generator"}
+              desc={
+                "ボタンで操作する数式生成ツールです．wordの数式の書式にも対応できる機能もあります．"
+              }
+            />
+          }
+        />
+        <Route
+          path="/tool/online_Form"
+          element={
+            <Tool
+              toolNameF={"Online_"}
+              toolNameL={"Form"}
+              desc={
+                "大学内生徒限定の掲示板です．現在開発中でスレッド作成ができません．DBの変更とReactに対応させます．"
+              }
+            />
+          }
+        />
+        <Route
+          path="/tool/project_thor"
+          element={
+            <Tool
+              toolNameF={"Project_"}
+              toolNameL={"Thor"}
+              desc={"私の研究内容を更新していく予定です．"}
+            />
+          }
+        />
+        <Route
+          path="/tool/sometaroka"
+          element={
+            <Tool
+              toolNameF={"SOME"}
+              toolNameL={"TAROKA_"}
+              desc={
+                "４つの大学と合同でアプリを開発中．ミライケータイプロジェクトの中の一つである”SOMETAROKA”の開発に参加した．方言にフォーカスした新感覚SNSである．"
+              }
+            />
+          }
+        />
       </Routes>
     </Router>
   </>

@@ -3,7 +3,7 @@ import { Underlay } from "./Common";
 import { Three } from "../Three";
 import ToolList from "./ToolList";
 
-const Tool = () => {
+const Tool = ({ toolNameF, toolNameL, desc }) => {
   return (
     <>
       <div
@@ -22,7 +22,21 @@ const Tool = () => {
         }}
       >
         <div className="header_space"></div>
-        <div>Tool</div>
+
+        <div className="mian_contents">
+          <div className="page_desc">
+            <p>Tools_</p>
+            <p>You can try the demo by clicking logo icon.</p>
+          </div>
+          <div className="tool_name">
+            <p>{toolNameF}</p>
+            <p>{toolNameL}</p>
+          </div>
+          <div className="tool_desc">
+            <p>{desc}</p>
+          </div>
+        </div>
+
         <ToolList />
         <div className="footer_space"></div>
       </div>
