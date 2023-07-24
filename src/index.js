@@ -17,13 +17,21 @@ createRoot(document.getElementById("root")).render(
       <Underlay />
       <Routes>
         <Route path="/" element={<Main />} />
-        <Route path="/tool/credit_checker" element={<Tool />} />
         <Route path="/movie" element={<Movie />} />
         <Route path="/design" element={<Design />} />
         <Route
           path="/club_other_activities"
           element={<ClubOtherActivities />}
         />
+        {/* ページごとに変数を追加してルーティング設定を行う */}
+        <Route path="/tool/credit_checker" element={<Tool />} />
+        {/* <Route path="/tool/credit_checker" element={<Tool />} />
+        <Route path="/movie" element={<Movie />} />
+        <Route path="/design" element={<Design />} />
+        <Route
+          path="/club_other_activities"
+          element={<ClubOtherActivities />}
+        /> */}
       </Routes>
     </Router>
   </>
