@@ -28,7 +28,7 @@ const fragmentShader = `
   varying vec2 vUv;
   uniform vec3 color1;
   uniform vec3 color2;
-  
+
   void main() {
     gl_FragColor = vec4(mix(color1, color2, vUv.y), 1.0);
   }
@@ -50,7 +50,7 @@ const fragmentShader = `
 const capMaterial = new THREE.MeshStandardMaterial({
   metalness: 0.75,
   roughness: 0.15,
-  color: "#8a492f",
+  color: "#c4a497",
   emissive: "#600000",
   envMapIntensity: 20,
 });
@@ -111,7 +111,7 @@ function Bauble({
               color2: { value: new THREE.Color(gradation[1]) }, // Thor:c6578b
             },
             transparent: true,
-            opacity: 0.5,
+            // opacity: 0.5,
             side: THREE.DoubleSide,
           })
         }

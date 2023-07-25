@@ -83,7 +83,7 @@ createRoot(document.getElementById("root")).render(
               desc={
                 "４つの大学と合同でアプリを開発中．ミライケータイプロジェクトの中の一つである”SOMETAROKA”の開発に参加した．方言にフォーカスした新感覚SNSである．"
               }
-              color={["#ffffff", "#000000"]}
+              color={["#f945f9", "#7e36ff"]}
             />
           }
         />
