@@ -45,9 +45,9 @@ const Main = () => {
             </li>
           </ul>
         </div>
-        <div className="main_mylogo">
+        {/* <div className="main_mylogo">
           <img src={tunaSandLogo} alt="273DoLogo" />
-        </div>
+        </div> */}
       </div>
 
       <div className="footer_space"></div>

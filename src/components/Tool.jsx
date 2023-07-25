@@ -28,10 +28,7 @@ const Tool = ({ toolNameF, toolNameL, desc, color }) => {
             <p>Tools_</p>
             <p>You can try the demo by clicking logo icon.</p>
           </div>
-          <div className="tool_name">
-            <p>{toolNameF}</p>
-            <p>{toolNameL}</p>
-          </div>
+
           <div className="tool_desc">
             <p>{desc}</p>
           </div>
