@@ -3,7 +3,7 @@ import { Underlay } from "./Common";
 import { Three } from "../Three";
 import ToolList from "./ToolList";
 
-const Tool = ({ toolNameF, toolNameL, desc }) => {
+const Tool = ({ toolNameF, toolNameL, desc, color }) => {
   return (
     <>
       <div
@@ -42,7 +42,7 @@ const Tool = ({ toolNameF, toolNameL, desc }) => {
       </div>
 
       <Suspense fallback={null}>
-        <Three />
+        <Three gradation={color} />
       </Suspense>
     </>
   );

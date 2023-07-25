@@ -11,10 +11,42 @@ import {
 } from "@react-three/rapier";
 
 THREE.ColorManagement.legacyMode = false;
-const baubleMaterial = new THREE.MeshLambertMaterial({
-  color: "#c0a0a0",
-  emissive: "red",
-});
+// const baubleMaterial = new THREE.MeshLambertMaterial({
+//   color: "#c0a0a0",
+//   emissive: "red",
+// });
+
+const vertexShader = `
+  varying vec2 vUv;
+  void main() {
+    vUv = uv;
+    gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+  }
+`;
+
+const fragmentShader = `
+  varying vec2 vUv;
+  uniform vec3 color1;
+  uniform vec3 color2;
+  
+  void main() {
+    gl_FragColor = vec4(mix(color1, color2, vUv.y), 1.0);
+  }
+`;
+
+// const baubleMaterial = (gradation) =>
+//   new THREE.ShaderMaterial({
+//     vertexShader,
+//     fragmentShader,
+//     uniforms: {
+//       color1: { value: new THREE.Color(gradation[0]) }, // Thor:ffa680
+//       color2: { value: new THREE.Color(gradation[1]) }, // Thor:c6578b
+//     },
+//     transparent: true,
+//     opacity: 0.5,
+//     side: THREE.DoubleSide,
+//   });
+
 const capMaterial = new THREE.MeshStandardMaterial({
   metalness: 0.75,
   roughness: 0.15,
@@ -31,6 +63,7 @@ function Bauble({
   vec = new THREE.Vector3(),
   scale,
   r = THREE.MathUtils.randFloatSpread,
+  gradation,
 }) {
   const { nodes } = useGLTF("/cap.glb");
   const api = useRef();
@@ -69,7 +102,19 @@ function Bauble({
         receiveShadow
         scale={scale}
         geometry={sphereGeometry}
-        material={baubleMaterial}
+        material={
+          new THREE.ShaderMaterial({
+            vertexShader,
+            fragmentShader,
+            uniforms: {
+              color1: { value: new THREE.Color(gradation[0]) }, // Thor:ffa680
+              color2: { value: new THREE.Color(gradation[1]) }, // Thor:c6578b
+            },
+            transparent: true,
+            opacity: 0.5,
+            side: THREE.DoubleSide,
+          })
+        }
       />
       <mesh
         castShadow
@@ -107,7 +152,7 @@ function Pointer({ vec = new THREE.Vector3() }) {
   );
 }
 
-export const Three = () => (
+export const Three = ({ gradation }) => (
   <Canvas
     shadows
     gl={{ alpha: true, stencil: false, depth: false, antialias: false }}
@@ -128,12 +173,12 @@ export const Three = () => (
     <Physics gravity={[0, 0, 0]}>
       <Pointer />
       {
-        baubles.map((props, i) => <Bauble key={i} {...props} />) /* prettier-ignore */
+        baubles.map((props, i) => <Bauble gradation={gradation}  key={i} {...props} />) /* prettier-ignore */
       }
     </Physics>
     <Environment files="/adamsbridge.hdr" />
     <EffectComposer disableNormalPass multisampling={0}>
-      <N8AO color="red" aoRadius={2} intensity={1} />
+      <N8AO color="white" aoRadius={2} intensity={1} />
       <SSAO />
     </EffectComposer>
   </Canvas>

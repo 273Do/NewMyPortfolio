@@ -33,6 +33,7 @@ createRoot(document.getElementById("root")).render(
               desc={
                 "ユニパからダウンロードした 成績表 PDFファイルを読み込むと，自動で不足単位数や修得進捗，GPA表示してくれます．現在は情報と経済学部に対応しています．"
               }
+              color={["#79a4d3", "#4e6292"]}
             />
           }
         />
@@ -45,6 +46,7 @@ createRoot(document.getElementById("root")).render(
               desc={
                 "ボタンで操作する数式生成ツールです．wordの数式の書式にも対応できる機能もあります．"
               }
+              color={["#36b6c6", "#537eb8"]}
             />
           }
         />
@@ -57,6 +59,7 @@ createRoot(document.getElementById("root")).render(
               desc={
                 "大学内生徒限定の掲示板です．現在開発中でスレッド作成ができません．DBの変更とReactに対応させます．"
               }
+              color={["#c37ebc", "#7667b6"]}
             />
           }
         />
@@ -67,6 +70,7 @@ createRoot(document.getElementById("root")).render(
               toolNameF={"Project_"}
               toolNameL={"Thor"}
               desc={"私の研究内容を更新していく予定です．"}
+              color={["#ffa680", "#c6578b"]}
             />
           }
         />
@@ -79,6 +83,7 @@ createRoot(document.getElementById("root")).render(
               desc={
                 "４つの大学と合同でアプリを開発中．ミライケータイプロジェクトの中の一つである”SOMETAROKA”の開発に参加した．方言にフォーカスした新感覚SNSである．"
               }
+              color={["#ffffff", "#000000"]}
             />
           }
         />
