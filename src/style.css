@@ -157,6 +157,34 @@ footer nav ul li a {
   /* background-color: aqua; */
 }
 
+/* main-page */
+.main_title {
+  font-size: 50px;
+  line-height: 1px;
+}
+
+.main_desc ul li {
+  margin-top: 40px;
+  margin-left: -40px;
+  list-style: none;
+}
+
+.main_desc ul li p {
+  font-size: 20px;
+  width: 350px;
+  word-wrap: break-word;
+  margin-top: -10px;
+}
+
+.main_mylogo img {
+  /* margin-left: 50px;
+  margin-right: 30px; */
+  margin-top: 20px;
+  width: 144px;
+  height: 186px;
+  pointer-events: none;
+}
+
 /* tool-list */
 .tool_list {
   position: absolute;
@@ -188,7 +216,7 @@ footer nav ul li a {
   transition: all 0.3s;
 }
 
-/* tools */
+/* tools-page */
 .mian_contents {
   margin-left: 50px;
 }
