@@ -200,14 +200,17 @@ import {
   MeshTransmissionMaterial,
 } from "@react-three/drei";
 import { useControls, button } from "leva";
+import { useEffect, useState } from "react";
 
-export function Three() {
+export function Three({ mainText, mainColor }) {
+  const [triggerRender, setTriggerRender] = useState(false);
+
   const { autoRotate, text, shadow, ...config } = useControls({
-    text: "Credit_\nChecker",
+    text: mainText, //"Credit_\nChecker"
     backside: true,
     backsideThickness: { value: 0.3, min: 0, max: 2 },
     samples: { value: 16, min: 1, max: 32, step: 1 },
-    resolution: { value: 256, min: 64, max: 2048, step: 64 }, //1024
+    resolution: { value: 512, min: 64, max: 2048, step: 64 }, //1024
     transmission: { value: 1, min: 0, max: 1 },
     clearcoat: { value: 0, min: 0.1, max: 1 },
     clearcoatRoughness: { value: 0.0, min: 0, max: 1 },
@@ -219,16 +222,31 @@ export function Three() {
     distortionScale: { value: 0.1, min: 0.01, max: 1, step: 0.01 },
     temporalDistortion: { value: 0.08, min: 0, max: 1, step: 0.01 },
     ior: { value: 1.5, min: 0, max: 2, step: 0.01 },
-    color: "#ff9cf5",
-    gColor: "#ff7eb3",
-    shadow: "#750d57",
+    color: mainColor[0], //#ff9cf5
+    gColor: mainColor[1], //#ff7eb3
+    shadow: mainColor[2], //#750d57
     autoRotate: true,
   });
+
+  // mainTextやmainColorが変更されたときに再レンダリングをトリガーする
+  useEffect(() => {
+    // stateを変更することで再レンダリングをトリガーします
+    setTriggerRender((prev) => !prev);
+  }, [mainText, mainColor]);
+
+  // mainTextやmainColorが変更されたときにconfigの値を更新する
+  useEffect(() => {
+    config.text = mainText;
+    config.color = mainColor[0];
+    config.gColor = mainColor[1];
+    config.shadow = mainColor[2];
+  }, [mainText, mainColor, triggerRender]);
+
   return (
     <Canvas
       shadows
       orthographic
-      camera={{ position: [10, 20, 20], zoom: 70 }}
+      camera={{ position: [10, 20, 20], zoom: 75 }}
       gl={{ preserveDrawingBuffer: true }}
     >
       <color attach="background" args={["#222"]} />
@@ -238,12 +256,12 @@ export function Three() {
         rotation={[-Math.PI / 2, 0, 0]}
         position={[0, -1, 5]}
       >
-        {text}
+        {mainText}
       </Text>
       {/** Controls */}
       <OrbitControls
         autoRotate={autoRotate}
-        autoRotateSpeed={-0.7}
+        autoRotateSpeed={-0.3}
         zoomSpeed={0.25}
         minZoom={40}
         maxZoom={140}
@@ -291,7 +309,7 @@ export function Three() {
       {/** Soft shadows */}
       <AccumulativeShadows
         frames={100}
-        color={shadow}
+        color={mainColor[2]}
         colorBlend={5}
         toneMapped={true}
         alphaTest={0.9}

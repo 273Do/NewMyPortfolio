@@ -28,12 +28,11 @@ createRoot(document.getElementById("root")).render(
           path="/tool/credit_checker"
           element={
             <Tool
-              toolNameF={"Credit_"}
-              toolNameL={"Checker"}
+              text={"Credit_\nChecker"}
               desc={
                 "ユニパからダウンロードした 成績表 PDFファイルを読み込むと，自動で不足単位数や修得進捗，GPA表示してくれます．現在は情報と経済学部に対応しています．"
               }
-              color={["#79a4d3", "#4e6292"]}
+              color={["#79a4d3", "#4e6292", "#0a2d53"]}
             />
           }
         />
@@ -41,12 +40,11 @@ createRoot(document.getElementById("root")).render(
           path="/tool/formula_generator"
           element={
             <Tool
-              toolNameF={"Formula_"}
-              toolNameL={"Generator"}
+              text={"Formula_\nGenerator"}
               desc={
                 "ボタンで操作する数式生成ツールです．wordの数式の書式にも対応できる機能もあります．"
               }
-              color={["#36b6c6", "#537eb8"]}
+              color={["#36b6c6", "#12387a", "#0d4850"]}
             />
           }
         />
@@ -54,12 +52,11 @@ createRoot(document.getElementById("root")).render(
           path="/tool/online_Form"
           element={
             <Tool
-              toolNameF={"Online_"}
-              toolNameL={"Form"}
+              text={"Online_\nForm"}
               desc={
                 "大学内生徒限定の掲示板です．現在開発中でスレッド作成ができません．DBの変更とReactに対応させます．"
               }
-              color={["#c37ebc", "#7667b6"]}
+              color={["#c37ebc", "#7667b6", "#400239"]}
             />
           }
         />
@@ -67,10 +64,9 @@ createRoot(document.getElementById("root")).render(
           path="/tool/project_thor"
           element={
             <Tool
-              toolNameF={"Project_"}
-              toolNameL={"Thor"}
+              text={"Project_\nThor"}
               desc={"私の研究内容を更新していく予定です．"}
-              color={["#ffa680", "#c6578b"]}
+              color={["#ffa680", "#c6578b", "#ce4104"]}
             />
           }
         />
@@ -78,12 +74,11 @@ createRoot(document.getElementById("root")).render(
           path="/tool/sometaroka"
           element={
             <Tool
-              toolNameF={"SOME"}
-              toolNameL={"TAROKA_"}
+              text={"SOME\nTAROKA_"}
               desc={
                 "４つの大学と合同でアプリを開発中．ミライケータイプロジェクトの中の一つである”SOMETAROKA”の開発に参加した．方言にフォーカスした新感覚SNSである．"
               }
-              color={["#f945f9", "#7e36ff"]}
+              color={["#f945f9", "##7e36ff", "#f945f9"]}
             />
           }
         />
