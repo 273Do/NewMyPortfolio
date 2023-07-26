@@ -246,7 +246,7 @@ export function Three({ mainText, mainColor }) {
     <Canvas
       shadows
       orthographic
-      camera={{ position: [10, 20, 20], zoom: 75 }}
+      camera={{ position: [10, 20, 20], zoom: 80 }}
       gl={{ preserveDrawingBuffer: true }}
     >
       <color attach="background" args={["#222"]} />
