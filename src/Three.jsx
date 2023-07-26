@@ -202,7 +202,7 @@ import {
 import { useControls, button } from "leva";
 import { useEffect, useState } from "react";
 
-export function Three({ mainText, mainColor }) {
+export function Three({ mainText, mainColor, mainFunc }) {
   const [triggerRender, setTriggerRender] = useState(false);
 
   const { autoRotate, text, shadow, ...config } = useControls({
@@ -252,6 +252,7 @@ export function Three({ mainText, mainColor }) {
       <color attach="background" args={["#222"]} />
       {/** The text and the grid */}
       <Text
+        fnc={mainFunc}
         config={config}
         rotation={[-Math.PI / 2, 0, 0]}
         position={[0, -1, 5]}
@@ -357,6 +358,7 @@ const Grid = ({ number = 23, lineWidth = 0.026, height = 0.5 }) => (
 );
 
 function Text({
+  func,
   children,
   config,
   font = "/Inter_Medium_Regular.json",
@@ -382,7 +384,7 @@ function Text({
             bevelSegments={10}
             curveSegments={128}
             bevelThickness={0.01}
-            onClick={() => console.log("osareat")}
+            onClick={() => func} //toolごとに呼び出す関数を変更
           >
             {children}
             <MeshTransmissionMaterial {...config} background={texture} />

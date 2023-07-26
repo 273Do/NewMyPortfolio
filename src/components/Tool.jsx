@@ -26,7 +26,7 @@ const Tool = ({ text, desc, color }) => {
         <div className="mian_contents">
           <div className="page_desc">
             <p>Tools_</p>
-            <p>You can try the demo by clicking logo icon.</p>
+            <p>You can try the demo by clicking tool text.</p>
           </div>
 
           <div className="tool_desc">
@@ -39,7 +39,7 @@ const Tool = ({ text, desc, color }) => {
       </div>
 
       <Suspense fallback={null}>
-        <Three mainText={text} mainColor={color} />
+        {/* <Three mainText={text} mainColor={color} /> */}
       </Suspense>
     </>
   );
