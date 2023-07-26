@@ -207,7 +207,7 @@ export function Three() {
     backside: true,
     backsideThickness: { value: 0.3, min: 0, max: 2 },
     samples: { value: 16, min: 1, max: 32, step: 1 },
-    resolution: { value: 1024, min: 64, max: 2048, step: 64 },
+    resolution: { value: 256, min: 64, max: 2048, step: 64 }, //1024
     transmission: { value: 1, min: 0, max: 1 },
     clearcoat: { value: 0, min: 0.1, max: 1 },
     clearcoatRoughness: { value: 0.0, min: 0, max: 1 },
@@ -243,7 +243,7 @@ export function Three() {
       {/** Controls */}
       <OrbitControls
         autoRotate={autoRotate}
-        autoRotateSpeed={-0.1}
+        autoRotateSpeed={-0.7}
         zoomSpeed={0.25}
         minZoom={40}
         maxZoom={140}
