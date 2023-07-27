@@ -201,6 +201,7 @@ import {
 } from "@react-three/drei";
 import { useControls, button } from "leva";
 import { useEffect, useState } from "react";
+import demo from "./components/Preview";
 
 export function Three({ mainText, mainColor, mainFunc }) {
   const [triggerRender, setTriggerRender] = useState(false);
@@ -252,7 +253,7 @@ export function Three({ mainText, mainColor, mainFunc }) {
       <color attach="background" args={["#222"]} />
       {/** The text and the grid */}
       <Text
-        fnc={mainFunc}
+        func={mainFunc}
         config={config}
         rotation={[-Math.PI / 2, 0, 0]}
         position={[0, -1, 5]}
@@ -368,6 +369,9 @@ function Text({
     RGBELoader,
     "https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/1k/aerodynamics_workshop_1k.hdr"
   );
+  const preview = (num) => {
+    console.log(num);
+  };
   return (
     <>
       <group>
@@ -384,7 +388,7 @@ function Text({
             bevelSegments={10}
             curveSegments={128}
             bevelThickness={0.01}
-            onClick={() => func} //toolごとに呼び出す関数を変更
+            onClick={() => demo(func)} //toolごとに呼び出す関数を変更
           >
             {children}
             <MeshTransmissionMaterial {...config} background={texture} />
