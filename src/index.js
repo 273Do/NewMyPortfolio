@@ -58,7 +58,8 @@ createRoot(document.getElementById("root")).render(
               desc={
                 "大学内生徒限定の掲示板です．現在開発中でスレッド作成ができません．DBの変更とReactに対応させます．"
               }
-              color={["#c37ebc", "#7667b6", "#400239"]}
+              // color={["#c37ebc", "#7667b6", "#400239"]}
+              color={["#ff9cf5", "#ff7eb3", "#400239"]}
               func={2}
             />
           }

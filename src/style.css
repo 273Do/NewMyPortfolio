@@ -234,6 +234,25 @@ footer nav ul li a {
   max-height: 70px;
   transition: all 0.3s;
 }
+/* tec-list */
+.tec_list nav {
+  margin-left: -40px;
+}
+
+.tec_list nav ul li {
+  letter-spacing: 20px;
+  display: contents;
+  list-style: none;
+  font-size: 45px;
+  z-index: 10;
+}
+
+.tec_img {
+  width: 45px;
+  /* -webkit-filter: brightness(0) invert(1);
+  filter: brightness(0) invert(1); */
+  filter: grayscale(100%);
+}
 
 /* tools-page */
 .mian_contents {

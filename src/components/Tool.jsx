@@ -2,6 +2,7 @@ import React, { Suspense } from "react";
 import { Underlay } from "./Common";
 import { Three } from "../Three";
 import ToolList from "./ToolList";
+import TecList from "./TecList";
 
 const Tool = ({ text, desc, color, func }) => {
   return (
@@ -32,6 +33,7 @@ const Tool = ({ text, desc, color, func }) => {
           <div className="tool_desc">
             <p>{desc}</p>
           </div>
+          <TecList tecNum={func} />
         </div>
 
         <ToolList />
@@ -39,7 +41,7 @@ const Tool = ({ text, desc, color, func }) => {
       </div>
 
       <Suspense fallback={null}>
-        <Three mainText={text} mainColor={color} mainFunc={func} />
+        {/* <Three mainText={text} mainColor={color} mainFunc={func} /> */}
       </Suspense>
     </>
   );
