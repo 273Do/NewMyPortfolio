@@ -4,7 +4,7 @@ import { Three } from "../Three";
 import ToolList from "./ToolList";
 import TecList from "./TecList";
 
-const Tool = ({ text, desc, color, func }) => {
+const Tool = ({ text, desc, PTime, color, func }) => {
   return (
     <>
       <div
@@ -23,7 +23,6 @@ const Tool = ({ text, desc, color, func }) => {
         }}
       >
         <div className="header_space"></div>
-
         <div className="mian_contents">
           <div className="page_desc">
             <p>Tools_</p>
@@ -34,8 +33,11 @@ const Tool = ({ text, desc, color, func }) => {
             <p>{desc}</p>
           </div>
           <TecList tecNum={func} />
-        </div>
 
+          <div className="production_time">
+            <p>Production_Time ：{PTime}</p>
+          </div>
+        </div>
         <ToolList />
         <div className="footer_space"></div>
       </div>

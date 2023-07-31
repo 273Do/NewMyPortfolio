@@ -237,6 +237,7 @@ footer nav ul li a {
 /* tec-list */
 .tec_list nav {
   margin-left: -40px;
+  margin-top: -10px;
 }
 
 .tec_list nav ul li {
@@ -285,6 +286,11 @@ footer nav ul li a {
   position: absolute;
   bottom: 0;
   margin-bottom: 28px;
+}
+
+.production_time {
+  margin-top: -10px;
+  font-size: 20px;
 }
 
 @media screen and (max-width: 1770px) {

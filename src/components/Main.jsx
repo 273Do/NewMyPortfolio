@@ -1,5 +1,4 @@
 import React from "react";
-import tunaSandLogo from "../images/alpha273DoLogo.png";
 import TecList from "./TecList";
 
 const Main = () => {
@@ -41,11 +40,14 @@ const Main = () => {
               </p>
             </li>
             <li>
+              <p>Skill_Tool</p>
+              <TecList tecNum={-1} />
+            </li>
+            <li>
               <p>Contact_</p>
               <p>For requests and inquiries, please DM me on Twitter.</p>
             </li>
           </ul>
-          <TecList tecNum={-1} />
         </div>
         {/* <div className="main_mylogo">
           <img src={tunaSandLogo} alt="273DoLogo" />

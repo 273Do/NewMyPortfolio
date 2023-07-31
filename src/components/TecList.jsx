@@ -1,4 +1,5 @@
 import React from "react";
+import AviUtlLogo from "../images/AviUtl.png";
 
 const TecList = ({ tecNum }) => {
   if (tecNum == 0) {
@@ -107,6 +108,9 @@ const TecList = ({ tecNum }) => {
               <i class="devicon-typescript-plain"></i>
             </li>
             <li>
+              <i class="devicon-css3-plain"></i>
+            </li>
+            <li>
               <i class="devicon-python-plain"></i>
             </li>
             <li>
@@ -116,25 +120,31 @@ const TecList = ({ tecNum }) => {
               <i class="devicon-django-plain"></i>
             </li>
             <li>
-              <a href="https://www.mathjax.org">
-                <img
-                  className="tec_img"
-                  title="MariaDB による提供"
-                  src="https://mariadb.com/wp-content/uploads/2019/11/mariadb-logo-vert_white-transparent.png"
-                  border="0"
-                  alt="MariaDB による提供"
-                />
-              </a>
+              <img
+                className="tec_img"
+                title="MariaDB による提供"
+                src="https://mariadb.com/wp-content/uploads/2019/11/mariadb-logo-vert_white-transparent.png"
+                border="0"
+                alt="MariaDB による提供"
+              />
             </li>
           </ul>
         </nav>
       </div>
     );
+  } else if (tecNum == 3) {
+    return;
   } else {
     return (
       <div className="tec_list">
         <nav>
           <ul>
+            <li>
+              <i class="devicon-html5-plain"></i>
+            </li>
+            <li>
+              <i class="devicon-css3-plain"></i>
+            </li>
             <li>
               <i className="devicon-javascript-plain"></i>
             </li>
@@ -142,13 +152,25 @@ const TecList = ({ tecNum }) => {
               <i class="devicon-typescript-plain"></i>
             </li>
             <li>
+              <i class="devicon-arduino-plain"></i>
+            </li>
+            <li>
+              <i class="devicon-c-plain"></i>
+            </li>
+            <li>
+              <i class="devicon-python-plain"></i>
+            </li>
+            <li>
+              <i class="devicon-markdown-original"></i>
+            </li>
+          </ul>
+          <br />
+          <ul>
+            <li>
+              <i class="devicon-vscode-plain"></i>
+            </li>
+            <li>
               <i class="devicon-react-original"></i>
-            </li>
-            <li>
-              <i class="devicon-threejs-original"></i>
-            </li>
-            <li>
-              <i class="devicon-swift-plain"></i>
             </li>
             <li>
               <i class="devicon-git-plain"></i>
@@ -159,11 +181,20 @@ const TecList = ({ tecNum }) => {
             <li>
               <i class="devicon-docker-plain"></i>
             </li>
+
             <li>
               <i class="devicon-figma-plain"></i>
             </li>
             <li>
               <i class="devicon-blender-original"></i>
+            </li>
+            <li>
+              <img
+                className="tec_img"
+                src={AviUtlLogo}
+                border="0"
+                alt="AviUtlによる提供"
+              />
             </li>
           </ul>
         </nav>
