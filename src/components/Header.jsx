@@ -21,10 +21,7 @@ const Header = () => {
             <Link to="/movie">Movie</Link>
           </li>
           <li>
-            <Link to="/design">Design</Link>
-          </li>
-          <li>
-            <Link to="/club_other_activities">Club / Other_Activities</Link>
+            <Link to="/other_activities">Other_Activities</Link>
           </li>
         </ul>
       </nav>

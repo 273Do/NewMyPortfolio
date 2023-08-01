@@ -1,13 +1,13 @@
 import React from "react";
 
-const ClubOtherActivities = () => {
+const OtherActivities = () => {
   return (
     <>
       <div className="header_space"></div>
-      <div>ClubOtherActivities</div>
+      <div>OtherActivities</div>
       <div className="footer_space"></div>
     </>
   );
 };
 
-export default ClubOtherActivities;
+export default OtherActivities;

@@ -7,8 +7,7 @@ import "./style.css";
 
 import Tool from "./components/Tool";
 import Main from "./components/Main";
-import Design from "./components/Design";
-import ClubOtherActivities from "./components/ClubOtherActivities";
+import OtherActivities from "./components/OtherActivities";
 import Movie from "./components/Movie";
 
 createRoot(document.getElementById("root")).render(
@@ -18,12 +17,7 @@ createRoot(document.getElementById("root")).render(
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/movie" element={<Movie />} />
-        <Route path="/design" element={<Design />} />
-        <Route
-          path="/club_other_activities"
-          element={<ClubOtherActivities />}
-        />
-        {/* ページごとに変数を追加してルーティング設定を行う */}
+        <Route path="/other_activities" element={<OtherActivities />} />
         <Route
           path="/tool/credit_checker"
           element={

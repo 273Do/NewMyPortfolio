@@ -23,7 +23,7 @@ const Tool = ({ text, desc, PTime, color, func }) => {
         }}
       >
         <div className="header_space"></div>
-        <div className="mian_contents">
+        <div className="main_contents">
           <div className="page_desc">
             <p>Tools_</p>
             <p>You can try the demo by clicking tool text.</p>
@@ -43,7 +43,7 @@ const Tool = ({ text, desc, PTime, color, func }) => {
       </div>
 
       <Suspense fallback={null}>
-        {/* <Three mainText={text} mainColor={color} mainFunc={func} /> */}
+        <Three mainText={text} mainColor={color} mainFunc={func} />
       </Suspense>
     </>
   );

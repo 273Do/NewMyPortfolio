@@ -1,5 +1,5 @@
 import React from "react";
-import AviUtlLogo from "../images/AviUtl.png";
+import AviUtlLogo from "../images/icon/AviUtl.png";
 
 const TecList = ({ tecNum }) => {
   if (tecNum == 0) {

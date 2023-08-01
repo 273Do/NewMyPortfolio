@@ -28,6 +28,12 @@ footer nav ul li a:hover,
   cursor: url("./images/cursor.png"), auto;
 }
 
+/* preview */
+.preview {
+  text-decoration: none;
+  color: white;
+}
+
 html,
 body,
 #root {
@@ -256,7 +262,7 @@ footer nav ul li a {
 }
 
 /* tools-page */
-.mian_contents {
+.main_contents {
   margin-left: 50px;
   pointer-events: none;
   z-index: 10;
