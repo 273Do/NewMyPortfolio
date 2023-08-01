@@ -50,15 +50,13 @@ const TecList = ({ tecNum }) => {
               <i className="devicon-jquery-plain"></i>
             </li>
             <li>
-              <a href="https://www.mathjax.org">
-                <img
-                  className="tec_img"
-                  title="MathJax による提供"
-                  src="https://www.mathjax.org/badge/badge-square-2.png"
-                  border="0"
-                  alt="MathJax による提供"
-                />
-              </a>
+              <img
+                className="tec_img"
+                title="MathJax による提供"
+                src="https://www.mathjax.org/badge/badge-square-2.png"
+                border="0"
+                alt="MathJax による提供"
+              />
             </li>
           </ul>
         </nav>
@@ -79,15 +77,13 @@ const TecList = ({ tecNum }) => {
               <i className="devicon-javascript-plain"></i>
             </li>
             <li>
-              <a href="https://www.mathjax.org">
-                <img
-                  className="tec_img"
-                  title="MathJax による提供"
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_Apps_Script.svg/2048px-Google_Apps_Script.svg.png"
-                  border="0"
-                  alt="MathJax による提供"
-                />
-              </a>
+              <img
+                className="tec_img"
+                title="MathJax による提供"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_Apps_Script.svg/2048px-Google_Apps_Script.svg.png"
+                border="0"
+                alt="MathJax による提供"
+              />
             </li>
           </ul>
         </nav>

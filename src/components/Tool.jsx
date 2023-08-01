@@ -5,6 +5,29 @@ import ToolList from "./ToolList";
 import TecList from "./TecList";
 
 const Tool = ({ text, desc, PTime, color, func }) => {
+  const elements = document.querySelectorAll(".tool_list nav ul li img");
+
+  let selectedElement = null;
+  function handleClick(event) {
+    if (selectedElement) {
+      // 選択された要素以外のCSSを解除
+      selectedElement.classList.remove("clicked");
+    }
+    if (selectedElement === event.target) {
+      // 同じ要素がクリックされた場合は選択を解除
+      // selectedElement = null;
+      event.target.classList.add("clicked");
+    } else {
+      // クリックされた要素にCSSを適用
+      event.target.classList.add("clicked");
+      selectedElement = event.target;
+    }
+  }
+  // 各要素にクリックイベントリスナーを追加する
+  elements.forEach((element) => {
+    element.addEventListener("click", handleClick);
+  });
+
   return (
     <>
       <div
@@ -43,7 +66,7 @@ const Tool = ({ text, desc, PTime, color, func }) => {
       </div>
 
       <Suspense fallback={null}>
-        <Three mainText={text} mainColor={color} mainFunc={func} />
+        {/* <Three mainText={text} mainColor={color} mainFunc={func} /> */}
       </Suspense>
     </>
   );
