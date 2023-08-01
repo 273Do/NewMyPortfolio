@@ -1,9 +1,9 @@
 import React from "react";
-import Cc from "../images/CreditChecker.png";
-import Fg from "../images/FormulaGenerator.png";
-import Of from "../images/OnlineForm.png";
-import Th from "../images/Thor.png";
-import S from "../images/SOMETAROKAIcon.png";
+import Cc from "../images/icon/CreditChecker.png";
+import Fg from "../images/icon/FormulaGenerator.png";
+import Of from "../images/icon/OnlineForm.png";
+import Th from "../images/icon/Thor.png";
+import S from "../images/icon/SOMETAROKAIcon.png";
 import { Link } from "react-router-dom";
 
 const ToolList = () => {

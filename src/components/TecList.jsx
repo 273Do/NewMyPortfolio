@@ -152,6 +152,9 @@ const TecList = ({ tecNum }) => {
               <i class="devicon-typescript-plain"></i>
             </li>
             <li>
+              <i class="devicon-react-original"></i>
+            </li>
+            <li>
               <i class="devicon-arduino-plain"></i>
             </li>
             <li>
@@ -160,18 +163,13 @@ const TecList = ({ tecNum }) => {
             <li>
               <i class="devicon-python-plain"></i>
             </li>
-            <li>
-              <i class="devicon-markdown-original"></i>
-            </li>
           </ul>
           <br />
           <ul>
             <li>
               <i class="devicon-vscode-plain"></i>
             </li>
-            <li>
-              <i class="devicon-react-original"></i>
-            </li>
+
             <li>
               <i class="devicon-git-plain"></i>
             </li>
@@ -181,7 +179,9 @@ const TecList = ({ tecNum }) => {
             <li>
               <i class="devicon-docker-plain"></i>
             </li>
-
+            <li>
+              <i class="devicon-markdown-original"></i>
+            </li>
             <li>
               <i class="devicon-figma-plain"></i>
             </li>
