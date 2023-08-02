@@ -1,11 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import myLogo from "../images/icon/273DoLogo.png";
+import { info } from "./Preview";
 
 const Header = () => {
   return (
     <header>
-      <h1 className="site_logo">
+      <h1 className="site_logo" onClick={() => info()}>
         <img src={myLogo} alt="273*Logo" />
       </h1>
 

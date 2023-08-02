@@ -82,8 +82,20 @@ createRoot(document.getElementById("root")).render(
                 "４つの大学と合同でアプリを開発中．ミライケータイプロジェクトの中の一つである”SOMETAROKA”の開発に参加した．方言にフォーカスした新感覚SNSである．"
               }
               PTime={"NULL"}
-              color={["#f945f9", "##7e36ff", "#f945f9"]}
+              color={["#f945f9", "#7e36ff", "#f945f9"]}
               func={4}
+            />
+          }
+        />
+        <Route
+          path="/tool/portfolio"
+          element={
+            <Tool
+              text={"My_\nPortfolio"}
+              desc={"私のポートフォリオを作成しました．"}
+              PTime={"2 weeks"}
+              color={["#d5b6f8", "#b8cce8", "#3d1b65"]}
+              func={5}
             />
           }
         />

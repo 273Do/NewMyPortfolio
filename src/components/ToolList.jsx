@@ -4,6 +4,7 @@ import Fg from "../images/icon/FormulaGenerator.png";
 import Of from "../images/icon/OnlineForm.png";
 import Th from "../images/icon/Thor.png";
 import S from "../images/icon/SOMETAROKAIcon.png";
+import Mp from "../images/icon/MyPortfolio.png";
 import { Link } from "react-router-dom";
 
 const ToolList = () => {
@@ -34,6 +35,11 @@ const ToolList = () => {
           <li>
             <Link to="/tool/sometaroka">
               <img src={S} alt="SOMETAROKA" />
+            </Link>
+          </li>
+          <li>
+            <Link to="/tool/portfolio">
+              <img src={Mp} alt="MyPortfolio" />
             </Link>
           </li>
         </ul>

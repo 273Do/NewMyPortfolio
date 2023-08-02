@@ -201,7 +201,7 @@ import {
 } from "@react-three/drei";
 import { useControls, button } from "leva";
 import { useEffect, useState } from "react";
-import demo from "./components/Preview";
+import { demo } from "./components/Preview";
 
 export function Three({ mainText, mainColor, mainFunc }) {
   const [triggerRender, setTriggerRender] = useState(false);

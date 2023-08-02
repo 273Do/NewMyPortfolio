@@ -130,6 +130,8 @@ const TecList = ({ tecNum }) => {
     );
   } else if (tecNum == 3) {
     return;
+  } else if (tecNum == 5) {
+    return;
   } else {
     return (
       <div className="tec_list">

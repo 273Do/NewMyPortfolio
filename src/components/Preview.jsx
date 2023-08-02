@@ -1,9 +1,11 @@
 import Swal from "sweetalert2";
+import Main from "./Main";
 
-export default function demo(num) {
+const demo = (num) => {
   if (num == 0) Demo("https://creditchecker.273doworks.com");
   else if (num == 1) Demo("https://formulagenerator.273doworks.com");
   else if (num == 2) Demo("https://273do.github.io/OnlineForm/indexLogin.html");
+  else if (num == 5) console.log("MyPortfolio");
   else {
     Swal.fire({
       background: "transparent",
@@ -14,7 +16,7 @@ export default function demo(num) {
       showCancelButton: false,
     });
   }
-}
+};
 
 function Demo(url) {
   Swal.fire({
@@ -32,3 +34,15 @@ function Demo(url) {
     showCancelButton: false,
   });
 }
+
+const info = () =>
+  Swal.fire({
+    background: "transparent",
+    type: "info",
+    title: "<p style='color:#fff'>coming soon</p>",
+    titleColor: "white",
+    showConfirmButton: false,
+    showCancelButton: false,
+  });
+
+export { demo, info };

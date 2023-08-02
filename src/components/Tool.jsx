@@ -66,7 +66,7 @@ const Tool = ({ text, desc, PTime, color, func }) => {
       </div>
 
       <Suspense fallback={null}>
-        {/* <Three mainText={text} mainColor={color} mainFunc={func} /> */}
+        <Three mainText={text} mainColor={color} mainFunc={func} />
       </Suspense>
     </>
   );
