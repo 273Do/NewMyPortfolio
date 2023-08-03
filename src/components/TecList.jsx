@@ -130,6 +130,10 @@ const TecList = ({ tecNum, theme }) => {
       <div className="tec_list">
         <nav>
           <ul>
+            {" "}
+            <li>
+              <i class="devicon-css3-plain"></i>
+            </li>
             <li>
               <i class="devicon-javascript-plain"></i>
             </li>
@@ -138,9 +142,6 @@ const TecList = ({ tecNum, theme }) => {
             </li>
             <li>
               <i class="devicon-threejs-original"></i>
-            </li>
-            <li>
-              <i class="devicon-css3-plain"></i>
             </li>
             <li>
               <i class="devicon-devicon-plain"></i>
