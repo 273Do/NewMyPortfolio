@@ -80,10 +80,23 @@ const TecList = ({ tecNum, theme }) => {
             <li>
               <img
                 className="tec_img"
-                title="MathJax による提供"
+                title="GAS による提供"
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_Apps_Script.svg/2048px-Google_Apps_Script.svg.png"
                 border="0"
-                alt="MathJax による提供"
+                alt="GAS による提供"
+              />
+            </li>
+            <li>
+              <img
+                className={`tec_img ${theme ? "" : "light_mode_logo"}`}
+                src={sa2}
+                border="0"
+                alt="sweetalert2による提供"
+                style={{
+                  width: "100px",
+                  marginBottom: "13px",
+                  marginLeft: "15px",
+                }}
               />
             </li>
           </ul>
@@ -152,7 +165,7 @@ const TecList = ({ tecNum, theme }) => {
                   className={`tec_img ${theme ? "" : "light_mode_logo"}`}
                   src={sa2}
                   border="0"
-                  alt="AviUtlによる提供"
+                  alt="sweetalert2による提供"
                   style={{ width: "100px", marginBottom: "13px" }}
                 />
               </li>
