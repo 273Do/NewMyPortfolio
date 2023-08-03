@@ -116,13 +116,7 @@ const TecList = ({ tecNum, theme }) => {
               <i class="devicon-django-plain"></i>
             </li>
             <li>
-              <img
-                className={`tec_img ${theme ? "" : "light_mode_logo"}`}
-                title="MariaDB による提供"
-                src="https://mariadb.com/wp-content/uploads/2019/11/mariadb-logo-vert_white-transparent.png"
-                border="0"
-                alt="MariaDB による提供"
-              />
+              <i class="devicon-mysql-plain"></i>
             </li>
           </ul>
         </nav>
