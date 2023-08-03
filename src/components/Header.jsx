@@ -11,7 +11,7 @@ const Header = () => {
     <header>
       <h1
         className={`site_logo ${theme ? "" : "light_mode_logo"}`}
-        onClick={() => info()}
+        onClick={() => info(theme)}
       >
         <img src={myLogo} alt="273*Logo" />
       </h1>

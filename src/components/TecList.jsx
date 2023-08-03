@@ -108,12 +108,12 @@ const TecList = ({ tecNum, theme }) => {
       <div className="tec_list">
         <nav>
           <ul>
-            <li>
+            {/* <li>
               <i class="devicon-apple-original"></i>
             </li>
             <li>
               <i class="devicon-android-plain"></i>
-            </li>
+            </li> */}
             <li>
               <i class="devicon-typescript-plain"></i>
             </li>
@@ -121,16 +121,19 @@ const TecList = ({ tecNum, theme }) => {
               <i class="devicon-css3-plain"></i>
             </li>
             <li>
-              <i class="devicon-python-plain"></i>
+              <i class="devicon-react-original"></i>
             </li>
             <li>
-              <i class="devicon-react-original"></i>
+              <i class="devicon-python-plain"></i>
             </li>
             <li>
               <i class="devicon-django-plain"></i>
             </li>
             <li>
               <i class="devicon-mysql-plain"></i>
+            </li>
+            <li>
+              <i class="devicon-nginx-original"></i>
             </li>
           </ul>
         </nav>
@@ -196,13 +199,13 @@ const TecList = ({ tecNum, theme }) => {
               <i class="devicon-react-original"></i>
             </li>
             <li>
-              <i class="devicon-arduino-plain"></i>
-            </li>
-            <li>
               <i class="devicon-c-plain"></i>
             </li>
             <li>
               <i class="devicon-python-plain"></i>
+            </li>
+            <li>
+              <i class="devicon-latex-original"></i>
             </li>
           </ul>
           <br />
