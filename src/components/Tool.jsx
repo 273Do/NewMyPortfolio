@@ -3,9 +3,13 @@ import { Underlay } from "./Common";
 import { Three } from "../Three";
 import ToolList from "./ToolList";
 import TecList from "./TecList";
+import { useTheme } from "./ThemeProvider";
 
 const Tool = ({ text, desc, PTime, color, func }) => {
-  const elements = document.querySelectorAll(".tool_list nav ul li img");
+  const { theme, setTheme } = useTheme();
+  console.log(theme);
+
+  const toolLogo = document.querySelectorAll(".tool_list nav ul li img");
 
   let selectedElement = null;
   function handleClick(event) {
@@ -24,8 +28,8 @@ const Tool = ({ text, desc, PTime, color, func }) => {
     }
   }
   // 各要素にクリックイベントリスナーを追加する
-  elements.forEach((element) => {
-    element.addEventListener("click", handleClick);
+  toolLogo.forEach((e) => {
+    e.addEventListener("click", handleClick);
   });
 
   return (
@@ -55,18 +59,25 @@ const Tool = ({ text, desc, PTime, color, func }) => {
           <div className="tool_desc">
             <p>{desc}</p>
           </div>
-          <TecList tecNum={func} />
+
+          <TecList tecNum={func} theme={theme} />
 
           <div className="production_time">
             <p>Production_Time ：{PTime}</p>
           </div>
         </div>
-        <ToolList />
+
+        <ToolList theme={theme} />
+
         <div className="footer_space"></div>
       </div>
-
       <Suspense fallback={null}>
-        <Three mainText={text} mainColor={color} mainFunc={func} />
+        <Three
+          mainText={text}
+          mainColor={color}
+          mainFunc={func}
+          BGtheme={theme}
+        />
       </Suspense>
     </>
   );

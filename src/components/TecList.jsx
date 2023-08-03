@@ -1,7 +1,7 @@
 import React from "react";
 import AviUtlLogo from "../images/icon/AviUtl.png";
 
-const TecList = ({ tecNum }) => {
+const TecList = ({ tecNum, theme }) => {
   if (tecNum == 0) {
     return (
       <div className="tec_list">
@@ -117,7 +117,7 @@ const TecList = ({ tecNum }) => {
             </li>
             <li>
               <img
-                className="tec_img"
+                className={`tec_img ${theme ? "" : "light_mode_logo"}`}
                 title="MariaDB による提供"
                 src="https://mariadb.com/wp-content/uploads/2019/11/mariadb-logo-vert_white-transparent.png"
                 border="0"
@@ -188,7 +188,7 @@ const TecList = ({ tecNum }) => {
             </li>
             <li>
               <img
-                className="tec_img"
+                className={`tec_img ${theme ? "" : "light_mode_logo"}`}
                 src={AviUtlLogo}
                 border="0"
                 alt="AviUtlによる提供"

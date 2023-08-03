@@ -203,8 +203,10 @@ import { useControls, button } from "leva";
 import { useEffect, useState } from "react";
 import { demo } from "./components/Preview";
 
-export function Three({ mainText, mainColor, mainFunc }) {
+export function Three({ mainText, mainColor, mainFunc, BGtheme }) {
   const [triggerRender, setTriggerRender] = useState(false);
+
+  var BGColor = BGtheme ? "#222" : "#f4ede4";
 
   const { autoRotate, text, shadow, ...config } = useControls({
     text: mainText, //"Credit_\nChecker"
@@ -233,7 +235,7 @@ export function Three({ mainText, mainColor, mainFunc }) {
   useEffect(() => {
     // stateを変更することで再レンダリングをトリガーします
     setTriggerRender((prev) => !prev);
-  }, [mainText, mainColor]);
+  }, [mainText, mainColor, BGColor]);
 
   // mainTextやmainColorが変更されたときにconfigの値を更新する
   useEffect(() => {
@@ -241,7 +243,8 @@ export function Three({ mainText, mainColor, mainFunc }) {
     config.color = mainColor[0];
     config.gColor = mainColor[1];
     config.shadow = mainColor[2];
-  }, [mainText, mainColor, triggerRender]);
+    BGColor = BGtheme;
+  }, [mainText, mainColor, BGColor, triggerRender]);
 
   return (
     <Canvas
@@ -250,7 +253,7 @@ export function Three({ mainText, mainColor, mainFunc }) {
       camera={{ position: [10, 20, 20], zoom: 80 }}
       gl={{ preserveDrawingBuffer: true }}
     >
-      <color attach="background" args={["#222"]} />
+      <color attach="background" args={[BGColor]} />
       {/** The text and the grid */}
       <Text
         func={mainFunc}

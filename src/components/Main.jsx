@@ -1,7 +1,9 @@
 import React from "react";
 import TecList from "./TecList";
+import { useTheme } from "./ThemeProvider";
 
 const Main = () => {
+  const { theme, setTheme } = useTheme();
   return (
     <>
       <div className="header_space"></div>
@@ -41,7 +43,7 @@ const Main = () => {
             </li>
             <li>
               <p>Skill_Tool</p>
-              <TecList tecNum={-1} />
+              <TecList tecNum={-1} theme={theme} />
             </li>
             <li>
               <p>Contact_</p>

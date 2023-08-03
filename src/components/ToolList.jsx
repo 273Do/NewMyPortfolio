@@ -7,9 +7,12 @@ import S from "../images/icon/SOMETAROKAIcon.png";
 import Mp from "../images/icon/MyPortfolio.png";
 import { Link } from "react-router-dom";
 
-const ToolList = () => {
+const ToolList = ({ theme }) => {
+  if (theme) console.log("1");
+  else console.log("2");
+
   return (
-    <div className="tool_list">
+    <div className={`tool_list ${theme ? "" : "light_mode_logo"}`}>
       <nav>
         <ul>
           <li>
