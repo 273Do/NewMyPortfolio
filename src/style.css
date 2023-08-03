@@ -14,6 +14,9 @@
 :root {
   --light-color: #f4ede4;
   --dark-color: #222;
+
+  --light-cursor: url("./images/cursorLight.png"), auto;
+  --dark-cursor: url("./images/cursorDark.png"), auto;
 }
 
 #leva__root {
@@ -32,7 +35,7 @@ footer nav ul li a:hover,
 #mode:hover,
 .tool_list nav ul li img:hover {
   opacity: 0.5;
-  cursor: url("./images/cursor.png"), auto;
+  cursor: inherit;
 }
 
 #root {
@@ -70,11 +73,15 @@ body {
   filter: brightness(0) invert(0.12) !important;
 }
 
+.light_mode_cursor {
+  cursor: var(--dark-cursor);
+}
+
 body {
   position: fixed;
   overflow: hidden;
   overscroll-behavior-y: none;
-  cursor: url("./images/cursor.png"), auto;
+  cursor: var(--light-cursor);
   font-family: "Objective-Medium", "NotoSansJP-Medium";
 }
 /*  */

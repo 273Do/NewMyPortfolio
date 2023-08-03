@@ -11,8 +11,13 @@ const Footer = () => {
 
   const { theme, setTheme } = useTheme();
 
-  if (theme) document.body.classList.remove("light_mode");
-  else document.body.classList.add("light_mode");
+  if (theme) {
+    document.body.classList.remove("light_mode");
+    document.body.classList.remove("light_mode_cursor");
+  } else {
+    document.body.classList.add("light_mode");
+    document.body.classList.add("light_mode_cursor");
+  }
 
   return (
     <footer>
