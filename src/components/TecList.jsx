@@ -1,5 +1,6 @@
 import React from "react";
 import AviUtlLogo from "../images/icon/AviUtl.png";
+import sa2 from "../images/icon/sa2.png";
 
 const TecList = ({ tecNum, theme }) => {
   if (tecNum == 0) {
@@ -125,6 +126,40 @@ const TecList = ({ tecNum, theme }) => {
   } else if (tecNum == 3) {
     return;
   } else if (tecNum == 5) {
+    return (
+      <div className="tec_list">
+        <nav>
+          <ul>
+            <li>
+              <i class="devicon-javascript-plain"></i>
+            </li>
+            <li>
+              <i class="devicon-react-original"></i>
+            </li>
+            <li>
+              <i class="devicon-threejs-original"></i>
+            </li>
+            <li>
+              <i class="devicon-css3-plain"></i>
+            </li>
+            <li>
+              <i class="devicon-devicon-plain"></i>
+            </li>
+            <li>
+              <li>
+                <img
+                  className={`tec_img ${theme ? "" : "light_mode_logo"}`}
+                  src={sa2}
+                  border="0"
+                  alt="AviUtlによる提供"
+                  style={{ width: "100px", marginBottom: "13px" }}
+                />
+              </li>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    );
     return;
   } else {
     return (
