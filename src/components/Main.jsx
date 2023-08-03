@@ -32,7 +32,7 @@ const Main = () => {
             </li>
             <li>
               <p>Hobby_</p>
-              <p>Code / 2DMG / 3DCG</p>
+              <p>Code / 2DMG / 3DCG / Piano</p>
             </li>
             <li>
               <p>Origin of name_</p>
