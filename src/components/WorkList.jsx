@@ -1,9 +1,16 @@
 import React from "react";
+import { MO, OA } from "./Preview";
 
 const WorkList = ({ id, title, imgPass }) => {
+  const preview = () => {
+    if (id[0] == "m") MO(id);
+    else OA(imgPass);
+  };
+  preview;
+
   return (
     <li>
-      <img src={imgPass} alt={id} />
+      <img src={imgPass} alt={id} onClick={() => preview()} />
       <p>{title}</p>
     </li>
   );

@@ -1,5 +1,4 @@
 import Swal from "sweetalert2";
-import Main from "./Main";
 
 const demo = (num) => {
   if (num == 0) Demo("https://creditchecker.273doworks.com");
@@ -28,8 +27,33 @@ function Demo(url) {
       url +
       '"target="_blank"rer="noopener noreferrer"><font color=#f4ede4>ページはこちら</p></a>',
     color: "#fff",
+    // border: "none",
+    width: "660px",
+    showConfirmButton: false,
+    showCancelButton: false,
+  });
+}
+
+function MO(id) {
+  Swal.fire({
+    background: "transparent",
+    title: id,
     border: "none",
     width: "660px",
+    showConfirmButton: false,
+    showCancelButton: false,
+  });
+}
+
+function OA(url) {
+  Swal.fire({
+    background: "transparent",
+    color: "#fff",
+    border: "none",
+    width: "660px",
+    imageUrl: url,
+    imageWidth: "85%",
+    imageHeight: "85%",
     showConfirmButton: false,
     showCancelButton: false,
   });
@@ -47,4 +71,4 @@ const info = () =>
     showCancelButton: false,
   });
 
-export { demo, info };
+export { demo, info, MO, OA };
