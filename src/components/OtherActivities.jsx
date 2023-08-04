@@ -70,7 +70,7 @@ const OtherActivitiesList = [
   },
   {
     id: "oa6",
-    title: "Figma，Stable Diffusion：webデザイン制作",
+    title: "Figma，Stable Diffusion：Webデザイン制作",
     imgPass: imgPass5,
   },
   {
