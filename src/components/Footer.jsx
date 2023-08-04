@@ -14,9 +14,11 @@ const Footer = () => {
   if (theme) {
     document.body.classList.remove("light_mode");
     document.body.classList.remove("light_mode_cursor");
+    document.documentElement.style.setProperty("--scrollbar-color", "#f4ede4");
   } else {
     document.body.classList.add("light_mode");
     document.body.classList.add("light_mode_cursor");
+    document.documentElement.style.setProperty("--scrollbar-color", "#222");
   }
 
   return (
