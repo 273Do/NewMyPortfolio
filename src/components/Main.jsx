@@ -7,7 +7,7 @@ import PageTransition from "../utils/PageTransition";
 const Main = () => {
   const { theme, setTheme } = useTheme();
   return (
-    <PageTransition>
+    <PageTransition BGColor={theme}>
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}

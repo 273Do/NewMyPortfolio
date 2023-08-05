@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-const PageTransition = ({ children }) => {
+const PageTransition = ({ children, BGColor }) => {
   const box = {
     initial: {
       height: "100vh",
@@ -23,7 +23,7 @@ const PageTransition = ({ children }) => {
         variants={box}
         style={{
           //   position: "relative",
-          backgroundColor: "#f4ede4",
+          backgroundColor: `${BGColor ? "#f4ede4" : "#222"}`,
           width: "100vh",
         }}
         // onAnimationEnd={() =>

@@ -6,12 +6,14 @@ import imgPass2 from "../images/movie/mw3.png";
 import imgPass3 from "../images/movie/mw4.png";
 import imgPass4 from "../images/movie/mw5.png";
 import imgPass5 from "../images/movie/mw6.png";
+import { useTheme } from "./ThemeProvider";
 import { motion } from "framer-motion";
 import PageTransition from "../utils/PageTransition";
 
 const Movie = () => {
+  const { theme, setTheme } = useTheme();
   return (
-    <PageTransition>
+    <PageTransition BGColor={theme}>
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}

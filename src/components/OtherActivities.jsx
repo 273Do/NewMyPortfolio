@@ -8,12 +8,14 @@ import imgPass4 from "../images/OtherAct/oa5.png";
 import imgPass5 from "../images/OtherAct/oa6.png";
 import imgPass6 from "../images/OtherAct/oa7.png";
 import imgPass7 from "../images/OtherAct/oa8.png";
+import { useTheme } from "./ThemeProvider";
 import { motion } from "framer-motion";
 import PageTransition from "../utils/PageTransition";
 
 const OtherActivities = () => {
+  const { theme, setTheme } = useTheme();
   return (
-    <PageTransition>
+    <PageTransition BGColor={theme}>
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
