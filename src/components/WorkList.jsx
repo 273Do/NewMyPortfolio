@@ -6,7 +6,6 @@ const WorkList = ({ id, title, imgPass }) => {
     if (id[0] == "m") MO(id);
     else OA(imgPass);
   };
-  preview;
 
   return (
     <li>

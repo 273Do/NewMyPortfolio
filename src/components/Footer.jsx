@@ -15,10 +15,12 @@ const Footer = () => {
     document.body.classList.remove("light_mode");
     document.body.classList.remove("light_mode_cursor");
     document.documentElement.style.setProperty("--scrollbar-color", "#f4ede4");
+    document.getElementById("address_color").setAttribute("content", "#f4ede4");
   } else {
     document.body.classList.add("light_mode");
     document.body.classList.add("light_mode_cursor");
     document.documentElement.style.setProperty("--scrollbar-color", "#222");
+    document.getElementById("address_color").setAttribute("content", "#222");
   }
 
   return (

@@ -34,21 +34,9 @@ function Demo(url) {
   });
 }
 
-function MO(id) {
-  Swal.fire({
-    background: "transparent",
-    title: id,
-    border: "none",
-    width: "660px",
-    showConfirmButton: false,
-    showCancelButton: false,
-  });
-}
-
 function OA(url) {
   Swal.fire({
     background: "transparent",
-    color: "#fff",
     border: "none",
     width: "660px",
     imageUrl: url,
@@ -72,3 +60,14 @@ const info = () =>
   });
 
 export { demo, info, MO, OA };
+
+function MO(id) {
+  Swal.fire({
+    background: "transparent",
+    title: id,
+    border: "none",
+    width: "660px",
+    showConfirmButton: false,
+    showCancelButton: false,
+  });
+}
