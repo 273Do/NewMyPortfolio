@@ -3,7 +3,7 @@ import { MO, OA } from "./Preview";
 
 const WorkList = ({ id, title, imgPass }) => {
   const preview = () => {
-    if (id[0] == "m") MO(id);
+    if (id[0] == "m") MO(title, id);
     else OA(imgPass);
   };
 
