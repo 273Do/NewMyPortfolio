@@ -8,39 +8,47 @@ import imgPass4 from "../images/OtherAct/oa5.png";
 import imgPass5 from "../images/OtherAct/oa6.png";
 import imgPass6 from "../images/OtherAct/oa7.png";
 import imgPass7 from "../images/OtherAct/oa8.png";
+import { motion } from "framer-motion";
+import PageTransition from "../utils/PageTransition";
 
 const OtherActivities = () => {
   return (
-    <>
-      <div className="header_space"></div>
-      <div className="main_contents">
-        <div className="page_desc">
-          <p>Other_Activities</p>
-          <p>These are my hobbies. I do many things.</p>
-        </div>
+    <PageTransition>
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.6, delay: 0.5 }}
+      >
+        <div className="header_space"></div>
+        <div className="main_contents">
+          <div className="page_desc">
+            <p>Other_Activities</p>
+            <p>These are my hobbies. I do many things.</p>
+          </div>
 
-        <div className="work_list OA">
-          <ul>
-            {OtherActivitiesList.map((OAdata) => (
-              <WorkList
-                id={OAdata.id}
-                title={OAdata.title}
-                imgPass={OAdata.imgPass}
-              />
-            ))}
-          </ul>
-        </div>
+          <div className="work_list OA">
+            <ul>
+              {OtherActivitiesList.map((OAdata) => (
+                <WorkList
+                  id={OAdata.id}
+                  title={OAdata.title}
+                  imgPass={OAdata.imgPass}
+                />
+              ))}
+            </ul>
+          </div>
 
-        <div className="tool_desc">
-          <p>
-            I am making posters for the registered organizations that I belong
-            to, as well as promotional posters. I am working with several
-            friends to make a plastic model wireless using a microcomputer.
-          </p>
+          <div className="tool_desc">
+            <p>
+              I am making posters for the registered organizations that I belong
+              to, as well as promotional posters. I am working with several
+              friends to make a plastic model wireless using a microcomputer.
+            </p>
+          </div>
         </div>
-      </div>
-      <div className="footer_space"></div>
-    </>
+        <div className="footer_space"></div>
+      </motion.div>
+    </PageTransition>
   );
 };
 

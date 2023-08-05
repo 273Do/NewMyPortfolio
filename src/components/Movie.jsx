@@ -6,40 +6,48 @@ import imgPass2 from "../images/movie/mw3.png";
 import imgPass3 from "../images/movie/mw4.png";
 import imgPass4 from "../images/movie/mw5.png";
 import imgPass5 from "../images/movie/mw6.png";
+import { motion } from "framer-motion";
+import PageTransition from "../utils/PageTransition";
 
 const Movie = () => {
   return (
-    <>
-      <div className="header_space"></div>
-      <div className="main_contents">
-        <div className="page_desc">
-          <p>Movie_</p>
-          <p>You can watch it by clicking. More posted on YouTube.</p>
-        </div>
+    <PageTransition>
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.6, delay: 0.5 }}
+      >
+        <div className="header_space"></div>
+        <div className="main_contents">
+          <div className="page_desc">
+            <p>Movie_</p>
+            <p>You can watch it by clicking. More posted on YouTube.</p>
+          </div>
 
-        <div className="work_list">
-          <ul>
-            {MovieData.map((Mdata) => (
-              <WorkList
-                id={Mdata.id}
-                title={Mdata.title}
-                imgPass={Mdata.imgPass}
-              />
-            ))}
-          </ul>
-        </div>
+          <div className="work_list">
+            <ul>
+              {MovieData.map((Mdata) => (
+                <WorkList
+                  id={Mdata.id}
+                  title={Mdata.title}
+                  imgPass={Mdata.imgPass}
+                />
+              ))}
+            </ul>
+          </div>
 
-        <div className="tool_desc">
-          <p>
-            On rare occasions, we exhibit the videos we have created at video
-            events. I create works in various styles that are not bound by
-            genres such as cool, cute, simple, and spooky. The video is
-            exhibited under a different name. Below is a sample work.
-          </p>
+          <div className="tool_desc">
+            <p>
+              On rare occasions, we exhibit the videos we have created at video
+              events. I create works in various styles that are not bound by
+              genres such as cool, cute, simple, and spooky. The video is
+              exhibited under a different name. Below is a sample work.
+            </p>
+          </div>
         </div>
-      </div>
-      <div className="footer_space"></div>
-    </>
+        <div className="footer_space"></div>
+      </motion.div>
+    </PageTransition>
   );
 };
 

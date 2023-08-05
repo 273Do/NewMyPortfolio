@@ -19,6 +19,12 @@
   --dark-cursor: url("./images/cursorDark.png"), auto;
 }
 
+/* 3DText */
+.ThreeD_text {
+  width: 100%;
+  height: 100%;
+}
+
 #leva__root {
   display: none;
 }
@@ -263,7 +269,7 @@ footer nav ul li a {
 
 /* tool-list */
 .tool_list {
-  position: absolute; /* 要素の配置方法を指定 */
+  position: absolute;
 
   right: 0px;
   top: 20%;

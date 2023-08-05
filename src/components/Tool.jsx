@@ -4,6 +4,7 @@ import { Three } from "../Three";
 import ToolList from "./ToolList";
 import TecList from "./TecList";
 import { useTheme } from "./ThemeProvider";
+import { motion } from "framer-motion";
 
 const Tool = ({ text, desc, PTime, color, func }) => {
   const { theme, setTheme } = useTheme();
@@ -33,7 +34,12 @@ const Tool = ({ text, desc, PTime, color, func }) => {
   });
 
   return (
-    <>
+    <motion.div
+      className="ThreeD_text"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.6, delay: 0.5 }}
+    >
       <div
         style={{
           position: "absolute",
@@ -71,6 +77,7 @@ const Tool = ({ text, desc, PTime, color, func }) => {
 
         <div className="footer_space"></div>
       </div>
+
       <Suspense fallback={null}>
         <Three
           mainText={text}
@@ -79,7 +86,7 @@ const Tool = ({ text, desc, PTime, color, func }) => {
           BGtheme={theme}
         />
       </Suspense>
-    </>
+    </motion.div>
   );
 };
 
