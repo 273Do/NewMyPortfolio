@@ -1,22 +1,37 @@
 import Swal from "sweetalert2";
 
-let notice =
-  '<div class="notice"><dl><dt><font color=#f4ede4>2023/05/18</dt><dd>OnlineForm(現在開発中)のページを公開しました．</dd><dt>2023/05/16</dt><dd>新ツールのアイコンを公開しました．</dd><dt>2023/05/15</dt><dd>スタイルの最適化を行いました．</dd> <dt>2023/05/15</dt> <dd>GitHubアカウントを公開しました．</dd> <dt>2023/03/15</dt><dd>FormulaGeneratorを公開しました．</dd> <dt>2023/02/22</dt><dd>サイトのSSL化を行いました．</dd> <dt>2023/02/22</dt></dl></div>';
-
 const info = () =>
   Swal.fire({
     background: "transparent",
-    title: "<p><font color=#f4ede4>coming soon</p>",
-    html: notice,
+    title: "<p><font color=#f4ede4>Notice</p>",
+    html: Alignment(),
     showConfirmButton: false,
     showCancelButton: false,
   });
+
+const Alignment = () => {
+  const noticeTmp = NoticeData.map(
+    (data) => `<dt>${data.date}</dt><dd>${data.about}</dd><br>`
+  );
+  return `<font color=#f4ede4><div style="height: 300px; overflow-y: scroll;"><dl></dl>${noticeTmp.join(
+    ""
+  )}</dl></div>`;
+};
 
 const demo = (num) => {
   if (num == 0) Demo("https://creditchecker.273doworks.com");
   else if (num == 1) Demo("https://formulagenerator.273doworks.com");
   else if (num == 2) Demo("https://273do.github.io/OnlineForm/indexLogin.html");
-  else if (num == 5) console.log("MyPortfolio");
+  else if (num == 5)
+    Swal.fire({
+      background: "transparent",
+      title: "<font color=#f4ede4>このサイトについての記録など",
+      html: '<iframe src="../../public/RecordOfPortfolioCreation.pdf" width="100%" height="700vh"></iframe>',
+      footer: "<font color=#f4ede4>今後の制作の参考にするための記録",
+      width: "660px",
+      showConfirmButton: false,
+      showCancelButton: false,
+    });
   else {
     Swal.fire({
       background: "transparent",
@@ -46,6 +61,7 @@ const Demo = (url) => {
 };
 
 const MO = (title, id) => {
+  // eval(`${id}(${title})`)
   Swal.fire({
     background: "transparent",
     title: `<font color=#f4ede4>${title}`,
@@ -71,6 +87,23 @@ const OA = (url) => {
 };
 
 export { demo, info, MO, OA };
+
+const NoticeData = [
+  { date: "2023/02/22", about: "サイトのSSL化を行いました．" },
+  { date: "2023/03/15", about: "FormulaGeneratorを公開しました．" },
+  { date: "2023/05/15", about: "GitHubアカウントを公開しました．" },
+  { date: "2023/05/15", about: "スタイルの最適化を行いました．" },
+  { date: "2023/05/16", about: "新ツールのアイコンを公開しました．" },
+  { date: "2023/05/15", about: "スタイルの最適化を行いました．" },
+  { date: "2023/05/16", about: "新ツールのアイコンを公開しました．" },
+  { date: "2023/02/22", about: "サイトのSSL化を行いました．" },
+  { date: "2023/03/15", about: "FormulaGeneratorを公開しました．" },
+  { date: "2023/05/15", about: "GitHubアカウントを公開しました．" },
+  { date: "2023/05/15", about: "スタイルの最適化を行いました．" },
+  { date: "2023/05/16", about: "新ツールのアイコンを公開しました．" },
+  { date: "2023/05/15", about: "スタイルの最適化を行いました．" },
+  { date: "2023/05/16", about: "新ツールのアイコンを公開しました．" },
+];
 
 const YTData = [
   '<iframe  width="560" height="315" src="https://www.youtube.com/embed/mS7fpL4gxnw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><br><iframe width="560" height="315" src="https://www.youtube.com/embed/wcHcc2F873I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><br><iframe width="560" height="315" src="https://www.youtube.com/embed/BLkTDUAWESQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
