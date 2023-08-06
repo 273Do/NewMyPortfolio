@@ -554,4 +554,8 @@ footer nav ul li a {
   .work_list ul li img {
     width: 350px;
   }
+
+  .mobile_space {
+    height: 100px;
+  }
 }

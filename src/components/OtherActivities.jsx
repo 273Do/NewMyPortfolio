@@ -38,6 +38,7 @@ const OtherActivities = () => {
                 />
               ))}
             </ul>
+            <div className="mobile_space"></div>
           </div>
 
           <div className="tool_desc">

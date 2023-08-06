@@ -30,7 +30,7 @@ const Header = () => {
         type: "warning",
         title: `<p style='color:${
           theme ? "#f4ede4" : "#222"
-        }'>Toolページの3D表示を有効にするにはブラウザのハードウェアアクセラレーション有効にしてください</p>`,
+        }'>Toolページの3D表示を有効にするにはブラウザのハードウェアアクセラレーションを有効にしてください</p>`,
         toast: true,
         width: "360px",
         position: "top-end", //top-end：右上
