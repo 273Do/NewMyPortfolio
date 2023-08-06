@@ -1,12 +1,42 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import myLogo from "../images/icon/273DoLogo.png";
 import { info } from "./Preview";
 import { useTheme } from "./ThemeProvider";
+import Swal from "sweetalert2";
 
 const Header = () => {
   const { theme, setTheme } = useTheme();
-
+  useEffect(() => {
+    // Swal.fire({
+    //   background: "transparent",
+    //   type: "warning",
+    //   title: "<p style='color:#fff'>coming soon</p>",
+    //   showConfirmButton: false,
+    //   toast: true,
+    // });
+    if (window.innerWidth >= 450) {
+      const Toast = Swal.mixin({
+        showConfirmButton: false,
+        timer: 10000,
+        timerProgressBar: true,
+        didOpen: (toast) => {
+          toast.addEventListener("mouseenter", Swal.stopTimer);
+          toast.addEventListener("mouseleave", Swal.resumeTimer);
+        },
+      });
+      Toast.fire({
+        background: "#222",
+        type: "warning",
+        title: `<p style='color:${
+          theme ? "#f4ede4" : "#222"
+        }'>Toolページの3D表示を有効にするにはブラウザのハードウェアアクセラレーション有効にしてください</p>`,
+        toast: true,
+        width: "360px",
+        position: "top-end", //top-end：右上
+      });
+    }
+  }, []);
   return (
     <header>
       <h1

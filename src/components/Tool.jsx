@@ -8,7 +8,6 @@ import { motion } from "framer-motion";
 
 const Tool = ({ text, desc, PTime, color, func }) => {
   const { theme, setTheme } = useTheme();
-  console.log(theme);
 
   const toolLogo = document.querySelectorAll(".tool_list nav ul li img");
 
