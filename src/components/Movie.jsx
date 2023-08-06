@@ -23,7 +23,7 @@ const Movie = () => {
         <div className="main_contents">
           <div className="page_desc">
             <p>Movie_</p>
-            <p>You can watch it by clicking. More posted on YouTube.</p>
+            <p>制作した映像の一部です．YouTubeにて公開しています．</p>
           </div>
 
           <div className="work_list">
@@ -40,10 +40,7 @@ const Movie = () => {
 
           <div className="tool_desc">
             <p>
-              On rare occasions, we exhibit the videos we have created at video
-              events. I create works in various styles that are not bound by
-              genres such as cool, cute, simple, and spooky. The video is
-              exhibited under a different name. Below is a sample work.
+              稀に映像イベントにて別名義で制作した映像を出展しています．かっこいい，かわいい，シンプル，不気味などといったジャンルに縛られない様々な作風で制作しています．
             </p>
           </div>
         </div>

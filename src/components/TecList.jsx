@@ -204,16 +204,8 @@ const TecList = ({ tecNum, theme }) => {
             <li>
               <i class="devicon-python-plain"></i>
             </li>
-            <li>
-              <i class="devicon-latex-original"></i>
-            </li>
           </ul>
-          <br />
           <ul>
-            <li>
-              <i class="devicon-vscode-plain"></i>
-            </li>
-
             <li>
               <i class="devicon-git-plain"></i>
             </li>

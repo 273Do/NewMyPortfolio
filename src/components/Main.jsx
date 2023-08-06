@@ -48,14 +48,11 @@ const Main = () => {
                   I like “Tuna_Sand(tunaSandwiches)”, so I'm working under the
                   name 273*.
                 </p>
+                <p>For requests and inquiries, please DM me on Twitter.</p>
               </li>
               <li>
                 <p>Skill_Tool</p>
                 <TecList tecNum={-1} theme={theme} />
-              </li>
-              <li>
-                <p>Contact_</p>
-                <p>For requests and inquiries, please DM me on Twitter.</p>
               </li>
             </ul>
           </div>

@@ -50,9 +50,6 @@ footer nav ul li a:hover,
   height: 100%;
   margin: 0;
   padding: 0;
-  /* overflow: hidden; */
-  /* background: var(--dark-color);
-  color: var(--light-color); */
 }
 
 body {
@@ -60,7 +57,6 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  /* overflow: hidden; */
   background: var(--dark-color);
   color: var(--light-color);
   transition: all 0.3s;
@@ -72,7 +68,6 @@ body {
 }
 
 .light_mode_text {
-  /* background: var(--light-color); */
   color: var(--dark-color) !important;
 }
 .light_mode_logo {
@@ -86,7 +81,6 @@ body {
 
 body {
   position: fixed;
-  /* overflow: hidden; */
   overscroll-behavior-y: none;
   cursor: var(--light-cursor);
   font-family: "Objective-Medium", "NotoSansJP-Medium";
@@ -119,7 +113,6 @@ header {
   display: flex;
   justify-content: top;
   align-items: center;
-  /* background-color: transparent; */
   position: fixed;
   width: 100%;
   height: 100px;
@@ -153,7 +146,6 @@ header nav ul li a {
 
 /* footer */
 footer {
-  /* background-color: transparent; */
   position: fixed;
   bottom: 0;
   left: 0;
@@ -175,10 +167,10 @@ footer {
 
 .copy_light p {
   position: fixed;
+  text-align: center;
   bottom: 14px;
   right: 0;
   left: 0;
-  text-align: center;
   pointer-events: none;
 }
 
@@ -210,7 +202,6 @@ footer nav ul li a {
 .header_space {
   width: 100%;
   height: 120px;
-  /* background-color: aqua; */
   background-color: transparent;
 }
 
@@ -229,22 +220,22 @@ footer nav ul li a {
   background-color: transparent;
 }
 
+.main_contents {
+  margin-left: 50px;
+  pointer-events: none;
+  z-index: 10;
+}
+
 /* main-page */
+.page_desc p {
+  font-size: 20px;
+  width: 300px;
+  word-wrap: break-word;
+}
+
 .main_title {
   font-size: 55px;
   line-height: 1px;
-
-  /* position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 0 auto;
-  padding: 0 4%; */
 }
 
 .main_desc ul li {
@@ -255,17 +246,10 @@ footer nav ul li a {
 
 .main_desc ul li p {
   font-size: 20px;
-  width: 330px;
+  width: 350px;
   word-wrap: break-word;
   margin-top: -15px;
 }
-
-/* .main_mylogo img {
-  margin-top: 20px;
-  width: 144px;
-  height: 186px;
-  pointer-events: none;
-} */
 
 /* tool-list */
 .tool_list {
@@ -274,12 +258,6 @@ footer nav ul li a {
   right: 0px;
   top: 20%;
   z-index: 10;
-  /* position: absolute;
-  width: 100%;
-  height: 90%;
-  display: flex;
-  align-items: center;
-  justify-content: center; */
 }
 
 .tool_list nav {
@@ -326,8 +304,6 @@ footer nav ul li a {
 
 .tec_img {
   width: 45px;
-  /* -webkit-filter: brightness(0) invert(1);
-  filter: brightness(0) invert(1); */
   -webkit-filter: brightness(0%) contrast(300%) invert(90%) sepia(15%);
   filter: brightness(0%) contrast(300%) invert(90%) sepia(15%);
   filter: grayscale(95%) invert(15%) sepia(35%);
@@ -335,17 +311,6 @@ footer nav ul li a {
 }
 
 /* tools-page */
-.main_contents {
-  margin-left: 50px;
-  pointer-events: none;
-  z-index: 10;
-}
-
-.page_desc p {
-  font-size: 20px;
-  width: 240px;
-  word-wrap: break-word;
-}
 
 .tool_name {
   position: fixed;
@@ -392,9 +357,6 @@ footer nav ul li a {
 
 .work_list ul li img {
   border-radius: 15px;
-
-  /* transform-style: preserve-3d; */
-  /* width: 500px; */
   width: 500px;
   margin: 20px 20px 0px 20px;
   transition: 0.3s all;
@@ -402,8 +364,6 @@ footer nav ul li a {
 
 .OA ul li img {
   border-radius: 15px;
-  /* transform-style: preserve-3d; */
-  /* width: 500px; */
   width: 420px;
   margin: 20px 20px 0px 20px;
 }
@@ -414,24 +374,159 @@ footer nav ul li a {
   margin: 0 auto;
 }
 
-@media screen and (max-width: 1770px) {
-  .tool_name {
-    margin-top: -2vw;
-  }
-
-  .tool_name p {
-    /* font-size: 330px; */
-    font-size: 17.5vw;
-    letter-spacing: 0px;
-  }
+@media screen and (max-width: 1120px) {
+  /* 小さいウィンドウ */
 
   .tool_desc p {
+    margin-bottom: 70px;
+    width: 500px;
+  }
+
+  .copy_light p {
+    text-align: start;
+    margin-left: 50px;
+  }
+
+  footer nav {
+    width: 80%;
+  }
+
+  footer nav ul {
+    margin-right: 50px;
+  }
+
+  footer nav ul li {
+    margin-right: 30px;
+  }
+
+  #mode {
+    margin-left: 15px;
+  }
+
+  .work_list {
+    height: calc(100vh - 420px);
   }
 }
 
-@media screen and (max-width: 1120px) {
+@media screen and (max-width: 450px) {
+  /*スマホ用のcssを記述*/
+
+  /* header */
+  header {
+    height: 80px;
+  }
+
+  header h1 {
+    margin-left: -30px;
+  }
+
+  /* footer */
+  footer {
+    height: 60px;
+  }
+
+  .copy_light p {
+    bottom: 4px;
+    text-align: start;
+    margin-left: 20px;
+  }
+
+  footer nav {
+    width: 80%;
+  }
+
+  footer nav ul {
+    margin-right: 40px;
+  }
+
+  footer nav ul li {
+    margin-right: 20px;
+  }
+
+  #mode {
+    margin-left: 15px;
+  }
+  /* contents */
+  .header_space {
+    height: 85px;
+  }
+
+  .footer_space {
+    height: 60px;
+  }
+
+  .main_contents {
+    margin-left: 20px;
+  }
+
+  /* main-page */
+  .page_desc p {
+    font-size: 15px;
+    margin-top: 10px;
+  }
+
+  .main_title {
+    font-size: 30px;
+    line-height: 1px;
+    margin-top: 5px;
+  }
+
+  .main_desc ul li {
+    margin-top: 28px;
+    margin-left: -40px;
+    list-style: none;
+  }
+
+  .main_desc ul li p {
+    font-size: 15px;
+  }
+
+  /* tool-list */
+  .tool_list {
+    top: 25%;
+  }
+
+  .tool_list nav {
+    margin-right: 10px;
+  }
+
+  .tool_list nav ul li img {
+    margin-top: 10px;
+  }
+
+  /* tec-list */
+  .tec_list nav {
+    margin-left: -40px;
+    margin-top: -10px;
+  }
+
+  .tec_list nav ul li {
+    font-size: 30px;
+  }
+
+  .tec_img {
+    width: 30px;
+  }
+
+  /* tools-page */
+
   .tool_desc p {
-    margin-bottom: 150px;
-    width: 500px;
+    width: 340px;
+    margin-bottom: 60px;
+  }
+
+  .production_time {
+    margin-top: -16px;
+    font-size: 15px;
+  }
+  /* works-page */
+
+  .work_list {
+    margin-left: -15px;
+    height: calc(100vh - 345px);
+  }
+
+  .work_list ul li img {
+    width: 360px;
   }
 }

@@ -59,7 +59,7 @@ const Tool = ({ text, desc, PTime, color, func }) => {
         <div className="main_contents">
           <div className="page_desc">
             <p>Tools_</p>
-            <p>You can try the demo by clicking tool text.</p>
+            <p>文字をクリックすることでデモを試すことができます．</p>
           </div>
 
           <div className="tool_desc">
@@ -69,7 +69,7 @@ const Tool = ({ text, desc, PTime, color, func }) => {
           <TecList tecNum={func} theme={theme} />
 
           <div className="production_time">
-            <p>Production_Time ：{PTime}</p>
+            <p>開発期間：{PTime}</p>
           </div>
         </div>
 
@@ -79,12 +79,12 @@ const Tool = ({ text, desc, PTime, color, func }) => {
       </div>
 
       <Suspense fallback={null}>
-        <Three
+        {/* <Three
           mainText={text}
           mainColor={color}
           mainFunc={func}
           BGtheme={theme}
-        />
+        /> */}
       </Suspense>
     </motion.div>
   );

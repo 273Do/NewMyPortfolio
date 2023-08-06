@@ -25,7 +25,7 @@ const OtherActivities = () => {
         <div className="main_contents">
           <div className="page_desc">
             <p>Other_Activities</p>
-            <p>These are my hobbies. I do many things.</p>
+            <p>以下は趣味一覧です．色々なことに手を出しています．</p>
           </div>
 
           <div className="work_list OA">
@@ -42,9 +42,7 @@ const OtherActivities = () => {
 
           <div className="tool_desc">
             <p>
-              I am making posters for the registered organizations that I belong
-              to, as well as promotional posters. I am working with several
-              friends to make a plastic model wireless using a microcomputer.
+              私が所属する登録団体の勧誘ポスターや宣伝ポスターの制作をしています．また，数人の友人とマイコンを用いてプラモデルの無線化に取り組んだんりしています．
             </p>
           </div>
         </div>
@@ -65,7 +63,7 @@ const OtherActivitiesList = [
   },
   {
     id: "oa3",
-    title: "ピアノ環境",
+    title: "ピアノ",
     imgPass: imgPass2,
   },
   {
@@ -75,12 +73,12 @@ const OtherActivitiesList = [
   },
   {
     id: "oa5",
-    title: "Blenderを用いた映像制作",
+    title: "AviUtl，Blenderを用いた映像制作",
     imgPass: imgPass4,
   },
   {
     id: "oa6",
-    title: "Figma，Stable Diffusion：Webデザイン制作",
+    title: "Figma，Stable Diffusion：Webデザイン",
     imgPass: imgPass5,
   },
   {
