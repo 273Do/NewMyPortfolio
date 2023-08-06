@@ -79,12 +79,12 @@ const Tool = ({ text, desc, PTime, color, func }) => {
       </div>
 
       <Suspense fallback={null}>
-        {/* <Three
+        <Three
           mainText={text}
           mainColor={color}
           mainFunc={func}
           BGtheme={theme}
-        /> */}
+        />
       </Suspense>
     </motion.div>
   );

@@ -37,7 +37,7 @@ const demo = (num) => {
       background: "transparent",
       type: "warning",
       title: "<p style='color:#fff'>coming soon</p>",
-      titleColor: "white",
+      width: "660px",
       showConfirmButton: false,
       showCancelButton: false,
     });
@@ -45,15 +45,21 @@ const demo = (num) => {
 };
 
 const Demo = (url) => {
+  var DemoScreen =
+    '<iframe src="' +
+    url +
+    '" width="600" height="800"></iframe><p className="preview"><a href="' +
+    url +
+    '"target="_blank"rer="noopener noreferrer"><font color=#f4ede4>ページはこちら</p></a>';
+  if (window.innerWidth <= 450)
+    DemoScreen = DemoScreen.replace(
+      / width="600" height="800"/g,
+      '/ width="380" height="600"/'
+    );
   Swal.fire({
     background: "transparent",
     title: "<font color=#f4ede4>Demo",
-    html:
-      '<iframe src="' +
-      url +
-      '" width="600" height="800"></iframe><p className="preview"><a href="' +
-      url +
-      '"target="_blank"rer="noopener noreferrer"><font color=#f4ede4>ページはこちら</p></a>',
+    html: DemoScreen,
     width: "660px",
     showConfirmButton: false,
     showCancelButton: false,
