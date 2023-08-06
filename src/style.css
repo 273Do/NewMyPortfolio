@@ -413,11 +413,31 @@ footer nav ul li a {
 
   /* header */
   header {
-    height: 80px;
+    height: 60px;
+    display: block;
   }
 
   header h1 {
-    margin-left: -30px;
+    margin-top: -5px;
+  }
+
+  header h1 img {
+    width: 94px;
+    height: 53px;
+    margin-left: 38%;
+  }
+
+  header nav {
+    margin-top: -35px;
+    text-align: center;
+  }
+
+  header nav ul li {
+    margin-right: 6%;
+  }
+
+  header nav ul li a {
+    font-size: 13px;
   }
 
   /* footer */
@@ -436,7 +456,7 @@ footer nav ul li a {
   }
 
   footer nav ul {
-    margin-right: 40px;
+    margin-right: 50px;
   }
 
   footer nav ul li {
@@ -444,11 +464,11 @@ footer nav ul li a {
   }
 
   #mode {
-    margin-left: 15px;
+    margin-left: 25px;
   }
   /* contents */
   .header_space {
-    height: 85px;
+    height: 65px;
   }
 
   .footer_space {
@@ -461,14 +481,15 @@ footer nav ul li a {
 
   /* main-page */
   .page_desc p {
-    font-size: 15px;
+    font-size: 13px;
     margin-top: 10px;
   }
 
   .main_title {
-    font-size: 30px;
+    font-size: 24px;
     line-height: 1px;
     margin-top: 5px;
+    margin-bottom: 5px;
   }
 
   .main_desc ul li {
@@ -478,7 +499,7 @@ footer nav ul li a {
   }
 
   .main_desc ul li p {
-    font-size: 15px;
+    font-size: 13px;
   }
 
   /* tool-list */
@@ -501,7 +522,7 @@ footer nav ul li a {
   }
 
   .tec_list nav ul li {
-    font-size: 30px;
+    font-size: 24px;
   }
 
   .tec_img {
@@ -517,7 +538,7 @@ footer nav ul li a {
 
   .production_time {
     margin-top: -16px;
-    font-size: 15px;
+    font-size: 13px;
   }
   /* works-page */
 
@@ -526,7 +547,11 @@ footer nav ul li a {
     height: calc(100vh - 345px);
   }
 
+  .work_list ul li p {
+    font-size: 15px;
+  }
+
   .work_list ul li img {
-    width: 360px;
+    width: 350px;
   }
 }

@@ -53,8 +53,8 @@ const Demo = (url) => {
     '"target="_blank"rer="noopener noreferrer"><font color=#f4ede4>ページはこちら</p></a>';
   if (window.innerWidth <= 450)
     DemoScreen = DemoScreen.replace(
-      / width="600" height="800"/g,
-      '/ width="380" height="600"/'
+      'width="600" height="800"',
+      'width="320" height="600"'
     );
   Swal.fire({
     background: "transparent",
@@ -62,7 +62,7 @@ const Demo = (url) => {
     html: DemoScreen,
     width: "660px",
     showConfirmButton: false,
-    showCancelButton: false,
+    showCancelButton: true,
   });
 };
 

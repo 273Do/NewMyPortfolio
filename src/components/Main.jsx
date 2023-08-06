@@ -51,7 +51,7 @@ const Main = () => {
                 <p>For requests and inquiries, please DM me on Twitter.</p>
               </li>
               <li>
-                <p>Skill_Tool</p>
+                <p>Skill_</p>
                 <TecList tecNum={-1} theme={theme} />
               </li>
             </ul>
