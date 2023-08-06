@@ -1,6 +1,6 @@
 import { Underlay, Overlay } from "./components/Common";
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Route,
   Routes,
   useLocation,
