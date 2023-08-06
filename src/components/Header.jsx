@@ -39,11 +39,8 @@ const Header = () => {
   }, []);
   return (
     <header>
-      <h1
-        className={`site_logo ${theme ? "" : "light_mode_logo"}`}
-        onClick={() => info(theme)}
-      >
-        <img src={myLogo} alt="273*Logo" />
+      <h1 className={`site_logo ${theme ? "" : "light_mode_logo"}`}>
+        <img src={myLogo} alt="273*Logo" onClick={() => info(theme)} />
       </h1>
 
       <nav>
