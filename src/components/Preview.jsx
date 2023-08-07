@@ -29,7 +29,8 @@ const demo = (num, img) => {
       background: "transparent",
       title: "<font color=#f4ede4>このサイトについての記録など",
       html: `<iframe src="${ROC}" width="100%" height="700vh"></iframe>`,
-      footer: "<font color=#f4ede4>今後の制作の参考にするための記録",
+      footer:
+        "<font color=#f4ede4>今後の制作の参考にするための記録<br>詳細はPC版でご覧ください．",
       width: "660px",
       showConfirmButton: false,
       showCancelButton: true,
