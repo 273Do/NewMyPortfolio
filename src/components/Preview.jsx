@@ -1,4 +1,5 @@
 import Swal from "sweetalert2";
+import ROC from "../utils/recordOfPortfolioCreation.pdf";
 
 const info = () =>
   Swal.fire({
@@ -27,17 +28,17 @@ const demo = (num, img) => {
     Swal.fire({
       background: "transparent",
       title: "<font color=#f4ede4>このサイトについての記録など",
-      html: '<iframe src="../../public/RecordOfPortfolioCreation.pdf" width="100%" height="700vh"></iframe>',
+      html: `<iframe src="${ROC}" width="100%" height="700vh"></iframe>`,
       footer: "<font color=#f4ede4>今後の制作の参考にするための記録",
       width: "660px",
       showConfirmButton: false,
-      showCancelButton: false,
+      showCancelButton: true,
     });
   else {
     Swal.fire({
       background: "transparent",
       type: "warning",
-      title: "<p style='color:#fff'>coming soon</p>",
+      title: "<p style='color:#f4ede4'>coming soon</p>",
       width: "660px",
       showConfirmButton: false,
       showCancelButton: false,
@@ -100,6 +101,10 @@ const OA = (url) => {
 export { demo, info, MO, OA };
 
 const NoticeData = [
+  {
+    date: "2023/08/07",
+    about: "ポートフォリオの制作記録をToolページのMpで公開しました．",
+  },
   { date: "2023/08/07", about: "サイトのSSL化を行いました．" },
   { date: "2023/08/07", about: "新たなポートフォリオを公開しました．" },
 ];
