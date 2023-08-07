@@ -103,6 +103,10 @@ export { demo, info, MO, OA };
 const NoticeData = [
   {
     date: "2023/08/07",
+    about: "制作記録のPDFファイルの表示をスマホ向けに最適化しました．",
+  },
+  {
+    date: "2023/08/07",
     about: "ポートフォリオの制作記録をToolページのMpで公開しました．",
   },
   { date: "2023/08/07", about: "サイトのSSL化を行いました．" },
