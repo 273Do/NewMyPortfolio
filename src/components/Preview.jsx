@@ -18,10 +18,11 @@ const Alignment = () => {
   )}</dl></div>`;
 };
 
-const demo = (num) => {
-  if (num == 0) Demo("https://creditchecker.273doworks.com");
-  else if (num == 1) Demo("https://formulagenerator.273doworks.com");
-  else if (num == 2) Demo("https://273do.github.io/OnlineForm/indexLogin.html");
+const demo = (num, img) => {
+  if (num == 0) Demo("https://creditchecker.273doworks.com", img);
+  else if (num == 1) Demo("https://formulagenerator.273doworks.com", img);
+  else if (num == 2)
+    Demo("https://273do.github.io/OnlineForm/indexLogin.html", img);
   else if (num == 5)
     Swal.fire({
       background: "transparent",
@@ -44,13 +45,13 @@ const demo = (num) => {
   }
 };
 
-const Demo = (url) => {
+const Demo = (url, imgURL) => {
   var DemoScreen =
     '<iframe src="' +
     url +
-    '" width="600" height="800"></iframe><p className="preview"><a href="' +
+    '" width="600" height="800"></iframe><p style="text-decoration:none"><a href="' +
     url +
-    '"target="_blank"rer="noopener noreferrer"><font color=#f4ede4>ページはこちら</p></a>';
+    `"target="_blank"rer="noopener noreferrer"><img height="5%" width="5%" align=top src=${imgURL} alt={icon}/><font color=#f4ede4>ページはこちら</p></a>`;
   if (window.innerWidth <= 450)
     DemoScreen = DemoScreen.replace(
       'width="600" height="800"',
@@ -99,20 +100,8 @@ const OA = (url) => {
 export { demo, info, MO, OA };
 
 const NoticeData = [
-  { date: "2023/02/22", about: "サイトのSSL化を行いました．" },
-  { date: "2023/03/15", about: "FormulaGeneratorを公開しました．" },
-  { date: "2023/05/15", about: "GitHubアカウントを公開しました．" },
-  { date: "2023/05/15", about: "スタイルの最適化を行いました．" },
-  { date: "2023/05/16", about: "新ツールのアイコンを公開しました．" },
-  { date: "2023/05/15", about: "スタイルの最適化を行いました．" },
-  { date: "2023/05/16", about: "新ツールのアイコンを公開しました．" },
-  { date: "2023/02/22", about: "サイトのSSL化を行いました．" },
-  { date: "2023/03/15", about: "FormulaGeneratorを公開しました．" },
-  { date: "2023/05/15", about: "GitHubアカウントを公開しました．" },
-  { date: "2023/05/15", about: "スタイルの最適化を行いました．" },
-  { date: "2023/05/16", about: "新ツールのアイコンを公開しました．" },
-  { date: "2023/05/15", about: "スタイルの最適化を行いました．" },
-  { date: "2023/05/16", about: "新ツールのアイコンを公開しました．" },
+  { date: "2023/08/07", about: "サイトのSSL化を行いました．" },
+  { date: "2023/08/07", about: "新たなポートフォリオを公開しました．" },
 ];
 
 const YTData = [

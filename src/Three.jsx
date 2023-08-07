@@ -16,7 +16,7 @@ import { useControls, button } from "leva";
 import { useEffect, useState } from "react";
 import { demo } from "./components/Preview";
 
-export function Three({ mainText, mainColor, mainFunc, BGtheme }) {
+export function Three({ mainText, mainColor, mainFunc, imgURL, BGtheme }) {
   const [triggerRender, setTriggerRender] = useState(false);
 
   var BGColor = BGtheme ? "#222" : "#f4ede4";
@@ -70,6 +70,7 @@ export function Three({ mainText, mainColor, mainFunc, BGtheme }) {
       {/** The text and the grid */}
       <Text
         func={mainFunc}
+        img={imgURL}
         config={config}
         rotation={[-Math.PI / 2, 0, 0]}
         position={[0, -1, 5]}
@@ -176,6 +177,7 @@ const Grid = ({ number = 23, lineWidth = 0.026, height = 0.5 }) => (
 
 function Text({
   func,
+  img,
   children,
   config,
   font = "/Inter_Medium_Regular.json",
@@ -185,9 +187,7 @@ function Text({
     RGBELoader,
     "https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/1k/aerodynamics_workshop_1k.hdr"
   );
-  const preview = (num) => {
-    console.log(num);
-  };
+
   return (
     <>
       <group>
@@ -204,7 +204,7 @@ function Text({
             bevelSegments={10}
             curveSegments={128}
             bevelThickness={0.01}
-            onClick={() => demo(func)}
+            onClick={() => demo(func, img)}
           >
             {children}
             <MeshTransmissionMaterial {...config} background={texture} />

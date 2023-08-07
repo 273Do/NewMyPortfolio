@@ -12,6 +12,13 @@ import Movie from "./components/Movie";
 import { ThemeProvider } from "./components/ThemeProvider";
 import { AnimatePresence } from "framer-motion";
 
+import Cc from "./images/icon/CreditChecker.png";
+import Fg from "./images/icon/FormulaGenerator.png";
+import Of from "./images/icon/OnlineForm.png";
+import Th from "./images/icon/Thor.png";
+import S from "./images/icon/SOMETAROKAIcon.png";
+import Mp from "./images/icon/MyPortfolio.png";
+
 function App() {
   const location = useLocation();
 
@@ -35,6 +42,7 @@ function App() {
                   PTime={"2週間"}
                   color={["#79a4d3", "#4e6292", "#0a2d53"]}
                   func={0}
+                  img={Cc}
                 />
               }
             />
@@ -49,6 +57,7 @@ function App() {
                   PTime={"2週間"}
                   color={["#36b6c6", "#12387a", "#0d4850"]}
                   func={1}
+                  img={Fg}
                 />
               }
             />
@@ -64,6 +73,7 @@ function App() {
                   PTime={"3ヶ月"}
                   color={["#ff9cf5", "#ff7eb3", "#400239"]}
                   func={2}
+                  img={Of}
                 />
               }
             />
@@ -76,6 +86,7 @@ function App() {
                   PTime={"開発中"}
                   color={["#ffa680", "#c6578b", "#ce4104"]}
                   func={3}
+                  img={Th}
                 />
               }
             />
@@ -90,6 +101,7 @@ function App() {
                   PTime={"開発中"}
                   color={["#f945f9", "#7e36ff", "#f945f9"]}
                   func={4}
+                  img={S}
                 />
               }
             />
@@ -102,6 +114,7 @@ function App() {
                   PTime={"2週間"}
                   color={["#d5b6f8", "#b8cce8", "#3d1b65"]}
                   func={5}
+                  img={Mp}
                 />
               }
             />

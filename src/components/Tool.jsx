@@ -6,7 +6,7 @@ import TecList from "./TecList";
 import { useTheme } from "./ThemeProvider";
 import { motion } from "framer-motion";
 
-const Tool = ({ text, desc, PTime, color, func }) => {
+const Tool = ({ text, desc, PTime, color, func, img }) => {
   const { theme, setTheme } = useTheme();
 
   const toolLogo = document.querySelectorAll(".tool_list nav ul li img");
@@ -82,6 +82,7 @@ const Tool = ({ text, desc, PTime, color, func }) => {
           mainText={text}
           mainColor={color}
           mainFunc={func}
+          imgURL={img}
           BGtheme={theme}
         />
       </Suspense>
