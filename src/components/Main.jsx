@@ -54,6 +54,10 @@ const Main = () => {
                 <p>Skill_</p>
                 <TecList tecNum={-1} theme={theme} />
               </li>
+              <li>
+                <p>DuringStudy&Plan_</p>
+                <TecList tecNum={-2} theme={theme} />
+              </li>
             </ul>
           </div>
           {/* <div className="main_mylogo">

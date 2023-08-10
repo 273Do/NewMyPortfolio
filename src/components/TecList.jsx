@@ -146,7 +146,6 @@ const TecList = ({ tecNum, theme }) => {
       <div className="tec_list">
         <nav>
           <ul>
-            {" "}
             <li>
               <i class="devicon-css3-plain"></i>
             </li>
@@ -177,8 +176,7 @@ const TecList = ({ tecNum, theme }) => {
         </nav>
       </div>
     );
-    return;
-  } else {
+  } else if (tecNum == -1) {
     return (
       <div className="tec_list">
         <nav>
@@ -231,6 +229,36 @@ const TecList = ({ tecNum, theme }) => {
                 border="0"
                 alt="AviUtlによる提供"
               />
+            </li>
+          </ul>
+        </nav>
+      </div>
+    );
+  } else if (tecNum == -2) {
+    return (
+      <div className="tec_list">
+        <nav>
+          <ul>
+            <li>
+              <i class="devicon-typescript-plain"></i>
+            </li>
+            <li>
+              <i class="devicon-react-original"></i>
+            </li>
+            <li>
+              <i class="devicon-redux-original"></i>
+            </li>
+            <li>
+              <i class="devicon-firebase-plain"></i>
+            </li>
+            <li>
+              <i class="devicon-amazonwebservices-original"></i>
+            </li>
+            <li>
+              <i class="devicon-azure-plain"></i>
+            </li>
+            <li>
+              <i class="devicon-docker-plain"></i>
             </li>
           </ul>
         </nav>
