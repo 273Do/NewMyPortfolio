@@ -17,8 +17,6 @@ import { useEffect, useState } from "react";
 import { demo } from "./components/Preview";
 
 export function Three({ mainText, mainColor, mainFunc, imgURL, BGtheme }) {
-  const [triggerRender, setTriggerRender] = useState(false);
-
   var BGColor = BGtheme ? "#222" : "#f4ede4";
 
   const { autoRotate, text, shadow, ...config } = useControls({
@@ -44,12 +42,6 @@ export function Three({ mainText, mainColor, mainFunc, imgURL, BGtheme }) {
     autoRotate: true,
   });
 
-  // mainTextやmainColorが変更されたときに再レンダリングをトリガーする
-  useEffect(() => {
-    // stateを変更することで再レンダリングをトリガーします
-    setTriggerRender((prev) => !prev);
-  }, [mainText, mainColor, BGColor]);
-
   // mainTextやmainColorが変更されたときにconfigの値を更新する
   useEffect(() => {
     config.text = mainText;
@@ -57,7 +49,7 @@ export function Three({ mainText, mainColor, mainFunc, imgURL, BGtheme }) {
     config.gColor = mainColor[1];
     config.shadow = mainColor[2];
     BGColor = BGtheme;
-  }, [mainText, mainColor, BGColor, triggerRender]);
+  }, [mainText, mainColor, BGColor]);
 
   return (
     <Canvas
