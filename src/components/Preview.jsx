@@ -30,7 +30,8 @@ const demo = (num, img) => {
       title: "<font color=#f4ede4>このサイトについての記録など",
       html: `<iframe src="${ROC}" width="100%" height="700vh"></iframe>`,
       footer:
-        "<font color=#f4ede4>今後の制作の参考にするための記録<br>詳細はPC版でご覧ください．",
+        '<font color=#f4ede4>今後の制作の参考にするための記録<br>詳細はPC版でご覧ください．<br>Qiitaでも解説しています．<a href="https://qiita.com/273Do/items/8fef9eba3c9133a5b961" "target="_blank"rer="noopener noreferrer"><font color=#f4ede4>こちら</p></a>',
+
       width: "660px",
       showConfirmButton: false,
       showCancelButton: true,
