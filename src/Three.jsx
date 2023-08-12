@@ -42,7 +42,6 @@ export function Three({ mainText, mainColor, mainFunc, imgURL, BGtheme }) {
     autoRotate: true,
   });
 
-  // mainTextやmainColorが変更されたときにconfigの値を更新する
   useEffect(() => {
     config.text = mainText;
     config.color = mainColor[0];
