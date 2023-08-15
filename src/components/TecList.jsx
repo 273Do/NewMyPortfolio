@@ -188,6 +188,9 @@ const TecList = ({ tecNum, theme }) => {
               <i class="devicon-css3-plain"></i>
             </li>
             <li>
+              <i class="devicon-sass-original"></i>
+            </li>
+            <li>
               <i className="devicon-javascript-plain"></i>
             </li>
             <li>
@@ -199,11 +202,11 @@ const TecList = ({ tecNum, theme }) => {
             <li>
               <i class="devicon-c-plain"></i>
             </li>
+          </ul>
+          <ul>
             <li>
               <i class="devicon-python-plain"></i>
             </li>
-          </ul>
-          <ul>
             <li>
               <i class="devicon-git-plain"></i>
             </li>
@@ -212,9 +215,6 @@ const TecList = ({ tecNum, theme }) => {
             </li>
             <li>
               <i class="devicon-docker-plain"></i>
-            </li>
-            <li>
-              <i class="devicon-markdown-original"></i>
             </li>
             <li>
               <i class="devicon-figma-plain"></i>
@@ -249,13 +249,16 @@ const TecList = ({ tecNum, theme }) => {
               <i class="devicon-redux-original"></i>
             </li>
             <li>
+              <i class="devicon-ruby-plain"></i>
+            </li>
+            <li>
+              <i class="devicon-rails-plain"></i>
+            </li>
+            <li>
               <i class="devicon-firebase-plain"></i>
             </li>
             <li>
               <i class="devicon-amazonwebservices-original"></i>
-            </li>
-            <li>
-              <i class="devicon-azure-plain"></i>
             </li>
             <li>
               <i class="devicon-docker-plain"></i>
