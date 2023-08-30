@@ -8,6 +8,7 @@ import imgPass4 from "../images/OtherAct/oa5.png";
 import imgPass5 from "../images/OtherAct/oa6.png";
 import imgPass6 from "../images/OtherAct/oa7.png";
 import imgPass7 from "../images/OtherAct/oa8.png";
+import imgPass8 from "../images/OtherAct/oa9.png";
 import { useTheme } from "./ThemeProvider";
 import { motion } from "framer-motion";
 import PageTransition from "../utils/PageTransition";
@@ -69,7 +70,7 @@ const OtherActivitiesList = [
   },
   {
     id: "oa4",
-    title: "写真：カラーグレーディング",
+    title: "サイクリング",
     imgPass: imgPass3,
   },
   {
@@ -87,5 +88,10 @@ const OtherActivitiesList = [
     title: "プラモデル無線化：組み立て&実装",
     imgPass: imgPass6,
   },
-  { id: "oa7", title: "プラモデル無線化：テスト", imgPass: imgPass7 },
+  { id: "oa8", title: "プラモデル無線化：テスト", imgPass: imgPass7 },
+  {
+    id: "oa9",
+    title: "写真：カラーグレーディング",
+    imgPass: imgPass8,
+  },
 ];
