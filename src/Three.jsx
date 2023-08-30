@@ -50,11 +50,16 @@ export function Three({ mainText, mainColor, mainFunc, imgURL, BGtheme }) {
     BGColor = BGtheme;
   }, [mainText, mainColor, BGColor]);
 
+  //デバイスによってカメラ倍率を変更
+  var cameraZoom;
+  if (window.innerWidth <= 450) cameraZoom = 40;
+  else cameraZoom = 80;
+
   return (
     <Canvas
       shadows
       orthographic
-      camera={{ position: [10, 20, 20], zoom: 80 }}
+      camera={{ position: [10, 20, 20], zoom: cameraZoom }}
       gl={{ preserveDrawingBuffer: true }}
     >
       <color attach="background" args={[BGColor]} />
