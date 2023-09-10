@@ -8,7 +8,7 @@ const Main = () => {
   setTimeout(function () {
     if (window.innerWidth >= 451)
       document.querySelector(".main_contents").classList.add("main_page");
-  }, 700);
+  }, 100);
 
   const { theme, setTheme } = useTheme();
   return (
