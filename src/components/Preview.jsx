@@ -20,8 +20,8 @@ const Alignment = () => {
 };
 
 const demo = (num, img) => {
-  if (num == 0) Demo("https://creditchecker.273doworks.com", img);
-  else if (num == 1) Demo("https://formulagenerator.273doworks.com", img);
+  if (num == 0) Demo("https://credit-checker.273doworks.com", img);
+  else if (num == 1) Demo("https://formula-generator.273doworks.com", img);
   else if (num == 2)
     Demo("https://273do.github.io/OnlineForm/indexLogin.html", img);
   else if (num == 5)
