@@ -5,6 +5,11 @@ import { motion } from "framer-motion";
 import PageTransition from "../utils/PageTransition";
 
 const Main = () => {
+  setTimeout(function () {
+    if (window.innerWidth >= 451)
+      document.querySelector(".main_contents").classList.add("main_page");
+  }, 700);
+
   const { theme, setTheme } = useTheme();
   return (
     <PageTransition BGColor={theme}>
@@ -16,7 +21,7 @@ const Main = () => {
       >
         <div className="header_space"></div>
 
-        <div className="main_contents main_page">
+        <div className="main_contents">
           <div className="page_desc">
             <p>Main_</p>
             <p>Please select a section from the header.</p>

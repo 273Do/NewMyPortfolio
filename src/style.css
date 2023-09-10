@@ -222,7 +222,6 @@ footer nav ul li a {
 
 .main_contents {
   margin-left: 50px;
-  z-index: 10;
   pointer-events: none;
   z-index: 10;
 }

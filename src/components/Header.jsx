@@ -37,6 +37,7 @@ const Header = () => {
       });
     }
   }, []);
+
   return (
     <header>
       <h1 className={`site_logo ${theme ? "" : "light_mode_logo"}`}>
