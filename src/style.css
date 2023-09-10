@@ -222,8 +222,12 @@ footer nav ul li a {
 
 .main_contents {
   margin-left: 50px;
-  pointer-events: none;
+  pointer-events: all;
   z-index: 10;
+  position: relative;
+  pointer-events: auto;
+  height: calc(120vh - 380px);
+  overflow-y: scroll;
 }
 
 .page_desc p {
