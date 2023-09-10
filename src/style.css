@@ -222,8 +222,11 @@ footer nav ul li a {
 
 .main_contents {
   margin-left: 50px;
-  pointer-events: all;
   z-index: 10;
+  pointer-events: none;
+}
+
+.main_page {
   position: relative;
   pointer-events: auto;
   height: calc(90vh - 100px);

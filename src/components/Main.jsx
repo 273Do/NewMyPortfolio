@@ -16,7 +16,7 @@ const Main = () => {
       >
         <div className="header_space"></div>
 
-        <div className="main_contents">
+        <div className="main_contents main_page">
           <div className="page_desc">
             <p>Main_</p>
             <p>Please select a section from the header.</p>
