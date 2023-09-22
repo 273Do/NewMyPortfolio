@@ -20,6 +20,7 @@ const Alignment = () => {
 };
 
 const demo = (num, img) => {
+  //TODO:これら全てをディレクトリから実行するように変更を行う．toolsフォルダに格納．
   if (num == 0) Demo("https://credit-checker.273doworks.com", img);
   else if (num == 1) Demo("https://formula-generator.273doworks.com", img);
   else if (num == 2)
