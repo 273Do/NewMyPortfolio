@@ -50,8 +50,7 @@ const Main = () => {
               <li>
                 <p>Origin of name_</p>
                 <p>
-                  I like “Tuna_Sand(tunaSandwiches)”, so I'm working under the
-                  name 273*.
+                  I like “tunaSandwiches”, so I'm working under the name 273*.
                 </p>
                 <p>For requests and inquiries, please DM me on Twitter.</p>
               </li>

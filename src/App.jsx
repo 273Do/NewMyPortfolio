@@ -18,6 +18,7 @@ import Of from "./images/icon/OnlineForm.png";
 import Th from "./images/icon/Thor.png";
 import S from "./images/icon/SOMETAROKAIcon.png";
 import Mp from "./images/icon/MyPortfolio.png";
+import R8 from "./images/icon/Route8.png";
 
 function App() {
   const location = useLocation();
@@ -32,32 +33,18 @@ function App() {
             <Route path="/movie" element={<Movie />} />
             <Route path="/other_activities" element={<OtherActivities />} />
             <Route
-              path="/tool/credit_checker"
+              path="/tool/route8"
               element={
                 <Tool
-                  text={"Credit_\nChecker"}
+                  text={"Route8"}
                   desc={
-                    "ユニパからダウンロードした 成績表 PDFファイルを読み込むと，自動で不足単位数や修得進捗，GPA表示してくれます．現在は情報と経済学部に対応しています．"
+                    "Route8 は走行時の状態や移動手段なども合わせて経路を共有できるサイトです．"
                   }
-                  PTime={"2週間"}
-                  color={["#79a4d3", "#4e6292", "#0a2d53"]}
-                  func={0}
-                  img={Cc}
-                />
-              }
-            />
-            <Route
-              path="/tool/formula_generator"
-              element={
-                <Tool
-                  text={"Formula_\nGenerator"}
-                  desc={
-                    "ボタンで操作する数式生成ツールです．wordの数式の書式にも対応できる機能もあります．"
-                  }
-                  PTime={"2週間"}
-                  color={["#36b6c6", "#12387a", "#0d4850"]}
-                  func={1}
-                  img={Fg}
+                  // color={["#c37ebc", "#7667b6", "#400239"]}
+                  PTime={"2ヶ月"}
+                  color={["#bbbcde", "#f4ede4", "#223a70"]}
+                  func={6}
+                  img={R8}
                 />
               }
             />
@@ -67,7 +54,7 @@ function App() {
                 <Tool
                   text={"Online_\nForm"}
                   desc={
-                    "大学内生徒限定の掲示板です．現在開発中でスレッド作成ができません．DBの変更とReactに対応させます．"
+                    "大学内生徒限定の掲示板です．javascriptの勉強のために制作しました．見た目だけです．"
                   }
                   // color={["#c37ebc", "#7667b6", "#400239"]}
                   PTime={"3ヶ月"}
@@ -91,6 +78,36 @@ function App() {
               }
             />
             <Route
+              path="/tool/credit_checker"
+              element={
+                <Tool
+                  text={"Credit_\nChecker"}
+                  desc={
+                    "ユニパからダウンロードした 成績表 PDFファイルを読み込むと，自動で不足単位数や修得進捗，GPA表示してくれます．現在は情報と経済学部に対応しています．"
+                  }
+                  PTime={"2週間"}
+                  color={["#a0d8ef", "#4e6292", "#0a2d53"]}
+                  func={0}
+                  img={Cc}
+                />
+              }
+            />
+            <Route
+              path="/tool/formula_generator"
+              element={
+                <Tool
+                  text={"Formula_\nGenerator"}
+                  desc={
+                    "ボタンで操作する数式生成ツールです．wordの数式の書式にも対応できる機能もあります．"
+                  }
+                  PTime={"2週間"}
+                  color={["#83ccd2", "#12387a", "#0d4850"]}
+                  func={1}
+                  img={Fg}
+                />
+              }
+            />
+            {/* <Route
               path="/tool/sometaroka"
               element={
                 <Tool
@@ -104,7 +121,7 @@ function App() {
                   img={S}
                 />
               }
-            />
+            /> */}
             <Route
               path="/tool/portfolio"
               element={

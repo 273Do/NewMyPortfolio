@@ -355,8 +355,9 @@ footer nav ul li a {
 .work_list ul {
   margin-left: -50px;
   max-width: 1920px;
-  justify-content: center;
+  margin: 0 auto;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   list-style: none;
 }

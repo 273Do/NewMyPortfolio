@@ -37,6 +37,12 @@ const demo = (num, img) => {
       showConfirmButton: false,
       showCancelButton: true,
     });
+  else if (num == 6)
+    Demo(
+      "https://route8-c22ee15e5fa9.herokuapp.com",
+      img,
+      '<font color=#f4ede4>Qiitaでも解説しています．<a href="https://qiita.com/273Do/items/15ab0361b020d68cc4eb" target="_blank"rer="noopener noreferrer"><font color=#f4ede4>こちら</p></a>'
+    );
   else {
     Swal.fire({
       background: "transparent",
@@ -49,7 +55,7 @@ const demo = (num, img) => {
   }
 };
 
-const Demo = (url, imgURL) => {
+const Demo = (url, imgURL, footer) => {
   var DemoScreen =
     '<iframe src="' +
     url +
@@ -68,6 +74,7 @@ const Demo = (url, imgURL) => {
     width: "660px",
     showConfirmButton: false,
     showCancelButton: true,
+    footer: footer,
   });
 };
 
@@ -104,6 +111,10 @@ const OA = (url) => {
 export { demo, info, MO, OA };
 
 const NoticeData = [
+  {
+    date: "2023/11/30",
+    about: "新たなツールを公開しました．",
+  },
   {
     date: "2023/09/10",
     about: "本サイトと全ツールをAWSへ移行しました．",

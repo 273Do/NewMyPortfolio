@@ -54,7 +54,7 @@ const Header = () => {
           <li>
             <Link
               className={` ${theme ? "" : "light_mode_text"}`}
-              to="/tool/credit_checker"
+              to="/tool/route8"
             >
               Tool
             </Link>

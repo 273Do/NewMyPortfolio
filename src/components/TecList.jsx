@@ -176,6 +176,36 @@ const TecList = ({ tecNum, theme }) => {
         </nav>
       </div>
     );
+  } else if (tecNum == 6) {
+    return (
+      <div className="tec_list">
+        <nav>
+          <ul>
+            <li>
+              <i class="devicon-typescript-plain"></i>
+            </li>
+            <li>
+              <i class="devicon-react-original"></i>
+            </li>
+            <li>
+              <i class="devicon-sass-original"></i>
+            </li>
+            <li>
+              <i class="devicon-php-plain"></i>
+            </li>
+            <li>
+              <i class="devicon-laravel-plain"></i>
+            </li>
+            <li>
+              <i class="devicon-heroku-original"></i>
+            </li>
+            <li>
+              <i class="devicon-blender-original"></i>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    );
   } else if (tecNum == -1) {
     return (
       <div className="tec_list">
@@ -255,10 +285,10 @@ const TecList = ({ tecNum, theme }) => {
               <i class="devicon-mysql-plain"></i>
             </li>
             <li>
-              <i class="devicon-java-plain"></i>
+              <i class="devicon-python-plain"></i>
             </li>
             <li>
-              <i class="devicon-docker-plain"></i>
+              <i class="devicon-django-plain"></i>
             </li>
           </ul>
         </nav>
